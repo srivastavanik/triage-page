@@ -104,6 +104,7 @@
             -webkit-font-smoothing: antialiased;
             -moz-osx-font-smoothing: grayscale;
             position: relative;
+            overflow-x: hidden;
         }
         
         /* Global Grainy Effect */
@@ -473,6 +474,9 @@
             margin-bottom: var(--space-32);
             margin-left: 0;
             margin-right: 0;
+            max-width: 100%;
+            word-wrap: break-word;
+            overflow-wrap: break-word;
         }
         
         .hero-line {
@@ -483,20 +487,19 @@
         }
         
         .hero-line-1 {
-            font-size: clamp(2.9rem, 6vw, 5rem);
+            font-size: clamp(2.5rem, 5.5vw, 4.5rem);
             color: var(--color-white);
         }
         
         .hero-line-2 {
-            font-size: clamp(2.9rem, 6vw, 5rem);
+            font-size: clamp(2.5rem, 5.5vw, 4.5rem);
             color: var(--color-white);
         }
         
         .hero-line-3 {
-            font-size: clamp(4rem, 8vw, 7rem);
+            font-size: clamp(3rem, 7vw, 6rem);
             color: var(--color-white);
             margin-bottom: 0;
-            white-space: nowrap;
         }
         
         .hero-subhead {
@@ -2105,8 +2108,7 @@
         /* Team Page Styles */
         .team-section {
             padding: 0;
-            width: 100vw;
-            margin-left: calc(-50vw + 50%);
+            width: 100%;
             background-color: var(--color-white);
             color: var(--color-black);
         }
@@ -2427,8 +2429,8 @@
             }
             
             .hero-line {
-                font-size: clamp(2.5rem, 12vw, 4rem);
-                line-height: 0.9;
+                font-size: clamp(2rem, 8vw, 3.5rem);
+                line-height: 0.95;
                 margin-bottom: var(--space-16);
             }
             
@@ -2466,8 +2468,7 @@
             
             /* Platform Features Mobile - Full Width Display */
             .platform-features {
-                width: 100vw;
-                margin-left: calc(-50vw + 50%);
+                width: 100%;
             }
             
             .platform-item {
@@ -2637,7 +2638,7 @@
             }
             
             .hero-line {
-                font-size: clamp(2rem, 10vw, 3rem);
+                font-size: clamp(1.75rem, 7vw, 2.75rem);
             }
             
             .platform-name {
@@ -2680,7 +2681,7 @@
             }
             
             .hero-line {
-                font-size: clamp(2rem, 8vw, 3rem);
+                font-size: clamp(1.75rem, 6vw, 2.5rem);
             }
             
             .platform-name {
@@ -2970,7 +2971,7 @@
                 <div class="hero-content">
                     <div class="hero-text">
                         <div class="hero-line hero-line-1">Maximal context for</div>
-                        <div class="hero-line hero-line-2">CySec & Penetration testing.</div>
+                        <div class="hero-line hero-line-2">CySec & Adversarial testing.</div>
                         <div class="hero-line hero-line-3">Ship with agentic reproducibility.</div>
                     </div>
                     <p class="hero-subhead">
