@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Paladin</title>
+    <title>Triage</title>
     <link rel="icon" type="image/png" sizes="32x32" href="./favicon (1).png">
     <link rel="icon" type="image/png" sizes="16x16" href="./favicon (1).png">
     <link rel="shortcut icon" type="image/png" href="./favicon (1).png">
@@ -17,9 +17,38 @@
     <!-- Font: JetBrains Mono for code -->
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400&display=swap" rel="stylesheet">
     
+    <!-- Font: Fragment Mono -->
+    <link href="https://fonts.googleapis.com/css2?family=Fragment+Mono:ital@0;1&display=swap" rel="stylesheet">
+    
     <!-- Note: Univers 55 Roman should be installed on the system or loaded via Adobe Fonts / font service -->
     
     <style>
+        /* Font Face - Radnika Next Bold */
+        @font-face {
+            font-family: 'Radnika Next';
+            src: url('https://fonts.cdnfonts.com/s/93129/RadnikaNext-Bold.woff') format('woff');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        /* Font Face - Akkurat */
+        @font-face {
+            font-family: 'Akkurat';
+            src: url('https://use.typekit.net/af/2758fe/00000000000000007735bb5c/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3') format('woff2');
+            font-weight: 400;
+            font-style: normal;
+            font-display: swap;
+        }
+
+        @font-face {
+            font-family: 'Akkurat';
+            src: url('https://use.typekit.net/af/2758fe/00000000000000007735bb5e/30/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3') format('woff2');
+            font-weight: 700;
+            font-style: normal;
+            font-display: swap;
+        }
+
         /* CSS Custom Properties for Design Tokens */
         :root {
             /* Grid & Spacing */
@@ -215,7 +244,7 @@
         .nav-container {
             max-width: var(--grid-max-width);
             margin: 0 auto;
-            padding: var(--space-24) var(--grid-margin);
+            padding: var(--space-16) var(--grid-margin);
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -302,7 +331,7 @@
             
             .team-grid {
                 grid-template-columns: 1fr;
-                grid-template-rows: auto auto auto auto;
+                grid-template-rows: auto auto;
                 height: auto;
             }
             
@@ -1117,7 +1146,7 @@
             right: var(--space-32);
         }
         
-        /* Why Paladin Grid */
+        /* Why Triage Grid */
         .why-section {
             background: linear-gradient(180deg, var(--color-black) 0%, var(--color-gray-950) 100%);
         }
@@ -1493,7 +1522,7 @@
                 var(--color-gray-300) 50%, 
                 var(--color-gray-600) 75%, 
                 var(--color-gray-800) 100%);
-            padding: var(--space-128) 0;
+            padding: 0 0 var(--space-128) 0;
             position: relative;
             overflow: hidden;
         }
@@ -1637,7 +1666,8 @@
         }
         
         .platform-item:nth-child(1) {
-            padding: var(--space-96) 0;
+            /* Start section 2 immediately under section 1 */
+            padding: 0 0 var(--space-96) 0;
         }
         
         .platform-item:nth-child(3) {
@@ -2137,8 +2167,8 @@
         .team-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            height: calc(100vh - 150px);
+            grid-template-rows: 1fr;
+            height: auto;
             flex: 1;
         }
         
@@ -2153,11 +2183,6 @@
         .team-member.nick {
             background-color: var(--color-white);
             color: var(--color-black);
-        }
-        
-        .team-member.anay {
-            background-color: var(--color-black);
-            color: var(--color-white);
         }
         
         .team-member.image-section {
@@ -2244,11 +2269,6 @@
         .team-member.nick .btn-social:hover {
             background-color: var(--color-black);
             color: var(--color-white);
-        }
-        
-        .team-member.anay .btn-social:hover {
-            background-color: var(--color-white);
-            color: var(--color-black);
         }
         
         .contact-details {
@@ -3317,6 +3337,125 @@
             }
         }
 
+        /* ============================================
+           3D SCROLL ANIMATION STYLES
+           ============================================ */
+
+        /* Canvas Container - Gets pinned during scroll */
+        #canvas-container {
+            position: relative;
+            height: 300vh;
+            width: 100%;
+            background: #ffffff;
+            overflow: visible;
+        }
+
+        #animation-canvas {
+            position: sticky !important;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            z-index: 1;
+            background: #ffffff;
+            display: block !important;
+        }
+        
+
+        /* Centered Overlay Content */
+        .overlay-content {
+            position: fixed;
+            top: 14%;
+            left: 50%;
+            transform: translate(-50%, 0);
+            text-align: center;
+            z-index: 10;
+            pointer-events: none;
+            width: 90%;
+            max-width: 1400px;
+            will-change: transform, opacity, filter;
+        }
+
+        .overlay-content h1 {
+            font-family: 'Akkurat', -apple-system, BlinkMacSystemFont, sans-serif;
+            font-size: clamp(2rem, 4vw, 4rem);
+            font-weight: 400;
+            letter-spacing: -0.03em;
+            line-height: 1.2;
+            color: #222222;
+            margin: 0 0 1.5rem 0;
+            text-shadow: 0 2px 20px rgba(255, 255, 255, 0.3);
+        }
+
+        .overlay-content .subtext {
+            font-family: 'Fragment Mono', 'JetBrains Mono', monospace;
+            font-size: clamp(0.65rem, 0.9vw, 0.9rem);
+            font-weight: 400;
+            letter-spacing: 0.15em;
+            color: #666666;
+            margin: 0 0 1rem 0;
+            text-transform: uppercase;
+        }
+
+        .overlay-content .logo-carousel {
+            overflow: hidden;
+            width: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            position: relative;
+            mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+            -webkit-mask-image: linear-gradient(to right, transparent 0%, black 15%, black 85%, transparent 100%);
+        }
+
+        .overlay-content .logo-track {
+            display: flex;
+            gap: 60px;
+            animation: scroll-logos 25s linear infinite;
+            will-change: transform;
+        }
+
+        .overlay-content .logo-track img {
+            height: 30px;
+            width: auto;
+            flex-shrink: 0;
+            object-fit: contain;
+        }
+
+        @keyframes scroll-logos {
+            0% {
+                transform: translateX(0);
+            }
+            100% {
+                transform: translateX(-50%);
+            }
+        }
+
+        /* Platform Section */
+        .platform-section {
+            background: linear-gradient(180deg, 
+                var(--color-white) 0%, 
+                var(--color-gray-100) 25%, 
+                var(--color-gray-300) 50%, 
+                var(--color-gray-600) 75%, 
+                var(--color-gray-800) 100%);
+            padding: var(--space-64) 0 var(--space-128) 0;
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            #canvas-container {
+                height: 300vh;
+            }
+            
+            .overlay-content h1 {
+                font-size: clamp(1.5rem, 8vw, 2.5rem);
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -3326,14 +3465,14 @@
     <!-- Navigation -->
     <nav class="nav" role="navigation" aria-label="Main navigation">
         <div class="nav-container">
-            <a href="#" class="logo" id="logo-link" aria-label="Paladin home">
-                <img src="./upscaled-image (1) (1).png" alt="Paladin">
+            <a href="#" class="logo" id="logo-link" aria-label="Triage home">
+                <img src="./Black White Minimal Simple Modern Letter A Arts Gallery Logo (3).png" alt="Triage">
             </a>
             <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
             <ul class="nav-links">
                 <li><a href="#product">Product</a></li>
                 <li><a href="#how-it-works">How it works</a></li>
-                <li><a href="#why-paladin">Why Paladin</a></li>
+                <li><a href="#why-paladin">Why Triage</a></li>
                 <li><a href="#use-cases">Use cases</a></li>
                 <li><a href="#pricing">Pricing</a></li>
                 <li><a href="#security">Security</a></li>
@@ -3344,37 +3483,37 @@
     </nav>
     
     <main id="main">
-        <!-- Hero Section -->
-        <section class="hero">
-            <video class="hero-video" autoplay loop muted playsinline>
-                <source src="./Aug_14__0715_83s_202508140943_lw1bn.mp4" type="video/mp4">
-            </video>
-            <div class="hero-grid">
-                <div class="grid-inner"></div>
-                <div class="grid-glow"></div>
-            </div>
-            <div class="container">
-                <div class="hero-content">
-                    <div class="hero-text">
-                        <div class="hero-line hero-line-1">Maximal context for</div>
-                        <div class="hero-line hero-line-2">CySec & Adversarial testing.</div>
-                        <div class="hero-line hero-line-3">Ship with agentic reproducibility.</div>
-                    </div>
-                    <p class="hero-subhead">
-                        Repo-resident agents perform full-stack penetration and cybersecurity testing, automatically generating merge-ready PRs—so you can patch critical vulnerabilities before users suffer.
-                    </p>
-                    
-                    <div class="trust-indicators">
-                        <div class="trust-item">Designed for everything from hobbyist to production-scale engineering.</div>
-                    </div>
-                    
-                    <div class="hero-actions">
-                        <a href="#investment" class="btn btn-investment"><span>Contact Us</span></a>
-                        <button onclick="showTeamPage()" class="btn btn-secondary">Meet the Team</button>
-                        <a href="#docs" class="btn btn-text">Private Alpha</a>
+        <!-- 3D Scroll Animation Section -->
+        <section id="canvas-container" class="scroll-animation-section">
+            <canvas id="animation-canvas"></canvas>
+            
+            <!-- Centered Overlay Content -->
+            <div class="overlay-content">
+                <h1>The all-in-one platform to break, assess,<br>and fix your AI-Native Product(s)</h1>
+                <p class="subtext">Trusted by Engineers at</p>
+                <div class="logo-carousel">
+                    <div class="logo-track">
+                        <img src="./public/logos/logo-62f3.png" alt="Partner">
+                        <img src="./public/logos/logo-ditto.png" alt="Ditto AI">
+                        <img src="./public/logos/logo-amazon.png" alt="Amazon">
+                        <img src="./public/logos/logo-berkeley.png" alt="UC Berkeley">
+                        <img src="./public/logos/logo-yc.png" alt="Y Combinator">
+                        <img src="./public/logos/logo-novita.png" alt="Novita AI">
+                        <img src="./Nyu_short_black.svg (1).png" alt="NYU">
+                        <img src="./public/logos/logo-stanford.png" alt="Stanford">
+                        
+                        <img src="./public/logos/logo-62f3.png" alt="Partner">
+                        <img src="./public/logos/logo-ditto.png" alt="Ditto AI">
+                        <img src="./public/logos/logo-amazon.png" alt="Amazon">
+                        <img src="./public/logos/logo-berkeley.png" alt="UC Berkeley">
+                        <img src="./public/logos/logo-yc.png" alt="Y Combinator">
+                        <img src="./public/logos/logo-novita.png" alt="Novita AI">
+                        <img src="./Nyu_short_black.svg (1).png" alt="NYU">
+                        <img src="./public/logos/logo-stanford.png" alt="Stanford">
                     </div>
                 </div>
             </div>
+
         </section>
         
         <!-- Platform Features Section -->
@@ -3458,7 +3597,7 @@
                     <h2>Full-Stack Security Testing</h2>
                     <div class="scope-description">
                         <p class="body-large">
-                            Paladin performs full-stack penetration and edge-case testing across <strong>desktop applications</strong> and <strong>web applications</strong>. 
+                            Triage performs full-stack penetration and edge-case testing across <strong>desktop applications</strong> and <strong>web applications</strong>. 
                             Agents can drive:
                         </p>
                         <ul class="scope-list">
@@ -3508,7 +3647,7 @@
                 <div class="pricing-header">
                     <h2>Pricing</h2>
                     <p class="pricing-subtext">
-                        Paladin scales to support everyone: from low / no code developers to production-grade engineering teams.
+                        Triage scales to support everyone: from low / no code developers to production-grade engineering teams.
                     </p>
                 </div>
                 
@@ -3569,10 +3708,10 @@
             </div>
         </section>
         
-        <!-- What Paladin Does -->
+        <!-- What Triage Does -->
         <section class="section value-section" id="product">
             <div class="container">
-                <h2>What Paladin does</h2>
+                <h2>What Triage does</h2>
                 
                 <div class="value-props-grid">
                     <div class="value-prop-item">
@@ -3663,10 +3802,10 @@
             </div>
         </section>
         
-        <!-- Why Paladin -->
+        <!-- Why Triage -->
         <section class="section why-section" id="why-paladin">
             <div class="container">
-                <h2>Why Paladin</h2>
+                <h2>Why Triage</h2>
                 
                 <div class="why-grid">
                     <div class="why-card">
@@ -3861,7 +4000,7 @@
                     <div class="investment-header">
                         <h2>Investment Opportunity</h2>
                         <p class="investment-intro">
-                            Paladin is currently seeking strategic investors for our <strong>pre-seed/seed funding round</strong>, anticipated within the next 1-2 months. 
+                            Triage is currently seeking strategic investors for our <strong>pre-seed/seed funding round</strong>, anticipated within the next 1-2 months. 
                             We value partnerships and are committed to negotiating all terms collaboratively. In very few cases are we 
                             willing to accept predetermined terms, as we believe in building mutually beneficial relationships with our investors.
                         </p>
@@ -3917,7 +4056,7 @@
                     
                     <div class="return-container">
                         <button id="return-home" class="btn btn-return">
-                            <span>Return to Paladin</span>
+                            <span>Return to Triage</span>
                         </button>
                 </div>
                 </div>
@@ -3972,48 +4111,11 @@
                         </div>
                     </div>
                 </div>
-                
-                <!-- Anay's Info (Bottom Left) -->
-                <div class="team-member anay info-section">
-                    <div class="member-info">
-                        <div class="member-header">
-                            <h2>Anay Shukla</h2>
-                        </div>
-                        <p class="member-title">Member of Technical Staff</p>
-                        
-                        <div class="credentials expanded" id="anay-credentials">
-                            <div class="credential-item">
-                                <strong>Education:</strong>
-                                <span class="typing-text">University of California, Berkeley | CS & DS</span>
-                            </div>
-                            <div class="credential-item">
-                                <strong>Experience:</strong>
-                                <span class="typing-text">Software Engineering @ Accenture, Researcher @ Lawrence Berkeley National Laboratory</span>
-                            </div>
-                        </div>
-                        
-                        <div class="social-links">
-                            <a href="https://www.linkedin.com/in/anayrshukla/" target="_blank" class="btn-social linkedin">
-                                LinkedIn
-                            </a>
-                        </div>
-                        
-                        <div class="contact-details">
-                            <p>anayrshukla@berkeley.edu</p>
-                            <p>+1 (925) 336-5097</p>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Anay's Image (Bottom Right) -->
-                <div class="team-member anay image-section">
-                    <img src="./Gemini_Generated_Image_7yh4fs7yh4fs7yh4 (1) (1).png" alt="Anay Shukla" class="member-image">
-                </div>
             </div>
             
             <div class="team-footer">
                 <button onclick="returnToHome()" class="btn btn-return">
-                    <span>Return to Paladin</span>
+                    <span>Return to Triage</span>
                 </button>
             </div>
         </div>
@@ -4032,7 +4134,7 @@
             <div class="careers-hero">
                 <h1>Build the future of DevSecOps with us.</h1>
                 <div class="careers-hero-description">
-                    <p><strong>Paladin</strong> builds autonomous, safety-gated security engineers. We orchestrate AI agents across static analysis, runtime adversarial testing in isolated VMs, and automated remediation PRs.</p>
+                    <p><strong>Triage</strong> builds autonomous, safety-gated security engineers. We orchestrate AI agents across static analysis, runtime adversarial testing in isolated VMs, and automated remediation PRs.</p>
                     <p>Security today is fragmented and reactive. Tool sprawl, rising cloud cost, and faster release cycles have outpaced human-only workflows. The result: risk compounds while teams stall. That approach won't scale. We are rewiring the security lifecycle around agents that are auditable, reliable, and fast.</p>
                     <p>We are a small, technical team with deep experience in AI, systems, and security. <strong>We work to win.</strong><br>If you have an edge, reach out.</p>
                 </div>
@@ -4098,7 +4200,7 @@
                         <span class="job-meta-label">Location</span>
                         <span class="job-meta-value">On-site, San Francisco</span>
                     </div>
-                    <a href="mailto:srivastavan@berkeley.edu?subject=AI Engineer - Paladin" class="job-apply-btn" onclick="event.stopPropagation()">
+                    <a href="mailto:srivastavan@berkeley.edu?subject=AI Engineer - Triage" class="job-apply-btn" onclick="event.stopPropagation()">
                         <svg viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                         </svg>
@@ -4127,7 +4229,7 @@
                         <span class="job-meta-label">Location</span>
                         <span class="job-meta-value">On-site, San Francisco</span>
                     </div>
-                    <a href="mailto:srivastavan@berkeley.edu?subject=Full-Stack Software Engineer - Paladin" class="job-apply-btn" onclick="event.stopPropagation()">
+                    <a href="mailto:srivastavan@berkeley.edu?subject=Full-Stack Software Engineer - Triage" class="job-apply-btn" onclick="event.stopPropagation()">
                         <svg viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                         </svg>
@@ -4156,7 +4258,7 @@
                         <span class="job-meta-label">Location</span>
                         <span class="job-meta-value">On-site, San Francisco</span>
                     </div>
-                    <a href="mailto:srivastavan@berkeley.edu?subject=Backend Software Engineer - Paladin" class="job-apply-btn" onclick="event.stopPropagation()">
+                    <a href="mailto:srivastavan@berkeley.edu?subject=Backend Software Engineer - Triage" class="job-apply-btn" onclick="event.stopPropagation()">
                         <svg viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                         </svg>
@@ -4185,7 +4287,7 @@
                         <span class="job-meta-label">Location</span>
                         <span class="job-meta-value">On-site, San Francisco</span>
                     </div>
-                    <a href="mailto:srivastavan@berkeley.edu?subject=Cybersecurity SME + Engineer - Paladin" class="job-apply-btn" onclick="event.stopPropagation()">
+                    <a href="mailto:srivastavan@berkeley.edu?subject=Cybersecurity SME + Engineer - Triage" class="job-apply-btn" onclick="event.stopPropagation()">
                         <svg viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                         </svg>
@@ -4214,7 +4316,7 @@
                         <span class="job-meta-label">Location</span>
                         <span class="job-meta-value">On-site, San Francisco</span>
                     </div>
-                    <a href="mailto:srivastavan@berkeley.edu?subject=Software Engineer Intern - Paladin" class="job-apply-btn" onclick="event.stopPropagation()">
+                    <a href="mailto:srivastavan@berkeley.edu?subject=Software Engineer Intern - Triage" class="job-apply-btn" onclick="event.stopPropagation()">
                         <svg viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                         </svg>
@@ -4243,7 +4345,7 @@
                         <span class="job-meta-label">Location</span>
                         <span class="job-meta-value">On-site, San Francisco</span>
                     </div>
-                    <a href="mailto:srivastavan@berkeley.edu?subject=Tell Us What You Can Do - Paladin" class="job-apply-btn" onclick="event.stopPropagation()">
+                    <a href="mailto:srivastavan@berkeley.edu?subject=Tell Us What You Can Do - Triage" class="job-apply-btn" onclick="event.stopPropagation()">
                         <svg viewBox="0 0 20 20" fill="currentColor">
                             <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"/>
                         </svg>
@@ -4260,7 +4362,7 @@
     <footer class="footer" role="contentinfo">
         <div class="container">
             <div class="footer-bottom">
-                <p>&copy; 2025 Paladin. Autonomous full-stack security testing.</p>
+                <p>&copy; 2025 Triage. Autonomous full-stack security testing.</p>
             </div>
         </div>
     </footer>
@@ -4723,6 +4825,278 @@
                 submitButton.querySelector('span').textContent = originalText;
                 alert('There was an error submitting your form. Please try again.');
             }
+        });
+
+        // ============================================
+        // 3D SCROLL ANIMATION IMPLEMENTATION
+        // ============================================
+
+        // Configuration
+        const CONFIG = {
+            frameCount: 480,
+            frameOffset: 31,        // Skip first 30 frames, start from frame 31
+            imagePath: './public/sequence/',
+            imagePrefix: 'frame-',
+            imageExtension: '.jpg',
+            imageDigits: 3,
+            textShrinkStart: 0.0,   // Start shrinking immediately
+            textBlurStart: 0.15,    // Start blurring very early at 15% progress
+            textFadeStart: 0.2,     // Start fading at 20% progress
+            textFadeEnd: 0.45       // Complete text fade at 45% progress (melts away quickly)
+        };
+
+        // Global variables
+        let canvas, ctx;
+        let frames = [];
+        let currentFrame = 0;
+
+        // Utility: Format frame number with leading zeros
+        function formatFrameNumber(num, digits) {
+            return String(num).padStart(digits, '0');
+        }
+
+        // Utility: Get image path for frame number
+        function getImagePath(frameNumber) {
+            const actualFrame = frameNumber + CONFIG.frameOffset;
+            const formattedNumber = formatFrameNumber(actualFrame, CONFIG.imageDigits);
+            return `${CONFIG.imagePath}${CONFIG.imagePrefix}${formattedNumber}${CONFIG.imageExtension}`;
+        }
+
+        // Preload all images silently
+        function preloadImages() {
+            return new Promise((resolve, reject) => {
+                let loadedCount = 0;
+
+                for (let i = 1; i <= CONFIG.frameCount; i++) {
+                    const img = new Image();
+                    img.src = getImagePath(i);
+
+                    img.onload = () => {
+                        loadedCount++;
+
+                        if (loadedCount === CONFIG.frameCount) {
+                            console.log('All images loaded successfully');
+                            resolve();
+                        }
+                    };
+
+                    img.onerror = () => {
+                        console.error(`Failed to load image: ${img.src}`);
+                        // Don't reject, just continue
+                        loadedCount++;
+                        if (loadedCount === CONFIG.frameCount) {
+                            resolve();
+                        }
+                    };
+
+                    frames.push(img);
+                }
+            });
+        }
+
+        // Setup canvas
+        function setupCanvas() {
+            canvas = document.getElementById('animation-canvas');
+            ctx = canvas.getContext('2d');
+            resizeCanvas();
+            window.addEventListener('resize', resizeCanvas);
+        }
+
+        // Resize canvas to match window
+        function resizeCanvas() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+
+            if (frames.length > 0) {
+                drawFrame(currentFrame);
+            }
+        }
+
+        // Draw specific frame to canvas
+        function drawFrame(frameIndex) {
+            frameIndex = Math.max(0, Math.min(frameIndex, CONFIG.frameCount - 1));
+            currentFrame = frameIndex;
+
+            const img = frames[frameIndex];
+
+            if (!img || !img.complete) {
+                console.warn(`Frame ${frameIndex} not loaded yet`);
+                // Don't clear canvas if image isn't ready - preserve previous frame
+                return;
+            }
+
+            // Fill with white before drawing to prevent black flash
+            ctx.fillStyle = '#ffffff';
+            ctx.fillRect(0, 0, canvas.width, canvas.height);
+
+            // Calculate dimensions for cover behavior
+            const canvasAspect = canvas.width / canvas.height;
+            const imgAspect = img.width / img.height;
+
+            let drawWidth, drawHeight, offsetX, offsetY;
+
+            if (canvasAspect > imgAspect) {
+                drawWidth = canvas.width;
+                drawHeight = canvas.width / imgAspect;
+                offsetX = 0;
+                offsetY = (canvas.height - drawHeight) / 2;
+            } else {
+                drawHeight = canvas.height;
+                drawWidth = canvas.height * imgAspect;
+                offsetX = (canvas.width - drawWidth) / 2;
+                offsetY = 0;
+            }
+
+            ctx.drawImage(img, offsetX, offsetY, drawWidth, drawHeight);
+        }
+
+        // Initialize scroll animation with vanilla JS
+        function initScrollAnimation() {
+            const container = document.getElementById('canvas-container');
+            const canvas = document.getElementById('animation-canvas');
+            const overlayContent = document.querySelector('.overlay-content');
+
+            canvas.dataset.allowHide = 'false';
+            
+            let lastDrawnFrame = -1;
+            let scrollY = 0;
+            let ticking = false;
+
+            const clamp01 = (value) => Math.min(Math.max(value, 0), 1);
+
+            // CRITICAL: Ensure canvas is always visible unless we explicitly hide it
+            setInterval(() => {
+                if (canvas.dataset.allowHide !== 'true' && canvas.style.display !== 'block') {
+                    canvas.style.display = 'block';
+                }
+            }, 100);
+
+            const handleScroll = () => {
+                scrollY = window.scrollY;
+                
+                if (!ticking) {
+                    window.requestAnimationFrame(updateFrame);
+                    ticking = true;
+                }
+            };
+
+            const updateFrame = () => {
+                ticking = false;
+                
+                const container = document.getElementById('canvas-container');
+                const containerTop = container.offsetTop;
+                const containerHeight = container.offsetHeight;
+                const containerBottom = containerTop + containerHeight;
+                
+                // Calculate progress through container (0 to 1)
+                let progress = 0;
+                if (scrollY >= containerTop && scrollY <= containerBottom) {
+                    progress = (scrollY - containerTop) / containerHeight;
+                } else if (scrollY > containerBottom) {
+                    progress = 1;
+                }
+                
+                // Play frames through most of the scroll (0-90%)
+                const frameProgress = Math.min(progress / 0.90, 1);
+                const frameIndex = Math.min(
+                    Math.floor(frameProgress * CONFIG.frameCount),
+                    CONFIG.frameCount - 1
+                );
+                
+                if (frameIndex !== lastDrawnFrame && frameIndex >= 0) {
+                    drawFrame(frameIndex);
+                    lastDrawnFrame = frameIndex;
+                }
+
+                // Text animation based on progress
+                
+                if (progress < CONFIG.textFadeEnd) {
+                    const shrinkProgress = progress / CONFIG.textFadeEnd;
+                    const textScale = 1 - (shrinkProgress * 0.75);
+
+                    let textBlur = 0;
+                    if (progress >= CONFIG.textBlurStart) {
+                        const blurProgress = (progress - CONFIG.textBlurStart) / (CONFIG.textFadeEnd - CONFIG.textBlurStart);
+                        textBlur = clamp01(blurProgress) * 20;
+                    }
+
+                    let textOpacity = 1;
+                    if (progress >= CONFIG.textFadeStart) {
+                        const fadeProgress = (progress - CONFIG.textFadeStart) / (CONFIG.textFadeEnd - CONFIG.textFadeStart);
+                        textOpacity = 1 - clamp01(fadeProgress);
+                    }
+
+                    overlayContent.style.display = 'block';
+                    overlayContent.style.transform = `translate(-50%, 0) scale(${textScale})`;
+                    overlayContent.style.opacity = textOpacity;
+                    overlayContent.style.filter = `blur(${textBlur}px)`;
+                } else {
+                    overlayContent.style.opacity = '0';
+                    overlayContent.style.filter = 'blur(20px)';
+                    overlayContent.style.display = 'none';
+                }
+            };
+
+            window.addEventListener('scroll', handleScroll, { passive: true });
+            handleScroll();
+            
+            console.log('Scroll animation initialized');
+        }
+
+
+        // Load first frame synchronously
+        function loadFirstFrame() {
+            return new Promise((resolve) => {
+                const firstImg = new Image();
+                firstImg.onload = () => {
+                    frames[0] = firstImg;
+                    resolve();
+                };
+                firstImg.onerror = () => {
+                    console.error('Failed to load first frame');
+                    resolve();
+                };
+                firstImg.src = getImagePath(1);
+            });
+        }
+
+        // Main initialization
+        async function initScrollAnimationApp() {
+            try {
+                setupCanvas();
+                await loadFirstFrame();
+                drawFrame(0);
+                
+                // Draw initial frame and ensure canvas is visible
+                const canvas = document.getElementById('animation-canvas');
+                canvas.style.display = 'block';
+                canvas.style.opacity = '1';
+                
+                initScrollAnimation();
+                preloadImages().catch(err => console.error('Preload error:', err));
+                
+                console.log('Section 1 animation ready - canvas should be visible');
+            } catch (error) {
+                console.error('Initialization failed:', error);
+            }
+        }
+
+        // Start immediately
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initScrollAnimationApp);
+        } else {
+            initScrollAnimationApp();
+        }
+        
+        // Emergency fallback - force canvas visible on any interaction
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                const canvas = document.getElementById('animation-canvas');
+                if (canvas) {
+                    canvas.style.display = 'block';
+                    canvas.style.opacity = '1';
+                }
+            }, 500);
         });
     </script>
 </body>
