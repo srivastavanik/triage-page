@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CodeDiffView, AllChecksPassed } from '../../components/GitHubElements';
 
 export default function SecurityScanner() {
