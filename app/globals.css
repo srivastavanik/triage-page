@@ -5180,6 +5180,13 @@
     width: 100%;
   }
 
+  @media (max-width: 1024px) {
+    .dashboard-ide-split {
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+  }
+
   .full-bleed {
     width: 100vw;
     margin-left: calc(50% - 50vw);
@@ -5632,6 +5639,190 @@
       animation-duration: 0.01ms !important;
       animation-iteration-count: 1 !important;
       transition-duration: 0.01ms !important;
+    }
+  }
+
+  /* Mobile Responsive Styles */
+  @media (max-width: 768px) {
+    .commit-security-timeline {
+      padding: 20px 16px;
+      border-radius: 12px;
+    }
+
+    .timeline-header h4 {
+      font-size: 12px;
+    }
+
+    .timeline-meta {
+      flex-direction: column;
+      gap: 4px;
+      font-size: 11px;
+    }
+
+    .security-heatmap-grid {
+      padding: 12px;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .heatmap-cell {
+      width: 10px;
+      height: 10px;
+    }
+
+    .commit-tooltip {
+      min-width: 180px;
+      font-size: 11px;
+      padding: 10px 12px;
+    }
+
+    .ide-full {
+      font-size: 11px;
+    }
+
+    .ide-sidebar {
+      display: none;
+    }
+
+    .ide-main {
+      grid-template-columns: 1fr;
+    }
+
+    .ide-right-panel {
+      max-height: 300px;
+    }
+
+    .container-max {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    h1 {
+      font-size: clamp(40px, 10vw, 80px) !important;
+      line-height: 1.1 !important;
+    }
+
+    h2 {
+      font-size: clamp(32px, 8vw, 56px) !important;
+    }
+
+    h3 {
+      font-size: clamp(24px, 6vw, 40px) !important;
+    }
+
+    .lifecycle-card,
+    .evidence-row,
+    .governance-section,
+    .principle-card {
+      padding: 20px;
+    }
+
+    .mega-dropdown-content {
+      position: fixed;
+      left: 0;
+      right: 0;
+      top: 72px;
+      max-height: calc(100vh - 72px);
+      overflow-y: auto;
+    }
+
+    .mega-grid {
+      grid-template-columns: 1fr;
+    }
+
+    .logo-carousel {
+      padding: 0 10px;
+    }
+
+    .career-listing-header {
+      grid-template-columns: 1fr;
+      gap: 16px;
+      padding: 24px 20px;
+    }
+
+    .career-meta-inline {
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .apply-button {
+      width: 100%;
+      justify-content: center;
+      margin-top: 12px;
+    }
+
+    .section-padding {
+      padding: 60px 0;
+    }
+
+    .grid.md\:grid-cols-3,
+    .grid.lg\:grid-cols-3 {
+      grid-template-columns: 1fr !important;
+    }
+
+    .grid.md\:grid-cols-2,
+    .grid.lg\:grid-cols-2 {
+      grid-template-columns: 1fr !important;
+    }
+
+    .text-\[20px\],
+    .text-\[24px\] {
+      font-size: 18px;
+    }
+
+    .signal-row,
+    .improvement-card {
+      margin-bottom: 16px;
+    }
+  }
+
+  @media (max-width: 1024px) {
+    .dashboard-panel,
+    .ide-panel {
+      min-height: 400px;
+    }
+
+    .dashboard-stats {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .heatmap-grid-dashboard {
+      grid-template-columns: repeat(3, 1fr);
+    }
+
+    .full-bleed {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .full-bleed {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+
+    .dashboard-stats {
+      grid-template-columns: 1fr;
+    }
+
+    .heatmap-grid-dashboard {
+      grid-template-columns: 1fr;
+    }
+
+    nav .container-max {
+      padding-left: 16px;
+      padding-right: 16px;
+    }
+
+    .btn {
+      padding: 12px 24px;
+      font-size: 14px;
+    }
+
+    .btn-large {
+      padding: 14px 28px;
+      font-size: 15px;
     }
   }
 }

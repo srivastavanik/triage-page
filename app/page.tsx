@@ -254,6 +254,7 @@ const ComprehensiveIDE = () => {
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [animPhase, setAnimPhase] = useState(0);
   const [displayText, setDisplayText] = useState({ line1: 'Specialized Security', line2: 'Teams?' });
   const [isHighlighted, setIsHighlighted] = useState(false);
@@ -549,18 +550,62 @@ export default function Home() {
               </div>
               <a 
                 href="mailto:srivastavan@berkeley.edu"
-                className="btn btn-primary"
+                className="btn btn-primary hidden md:inline-flex"
                 style={{ background: '#f6f4f1', color: '#0e3638' }}
               >
                 Contact Us
               </a>
+              
+              {/* Mobile Menu Toggle */}
+              <button
+                className="md:hidden text-pale-wood p-2"
+                onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              >
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+                  {mobileMenuOpen ? (
+                    <path d="M6 18L18 6M6 6l12 12" />
+                  ) : (
+                    <path d="M3 12h18M3 6h18M3 18h18" />
+                  )}
+                </svg>
+              </button>
             </div>
           </div>
+          
+          {/* Mobile Menu */}
+          <AnimatePresence>
+            {mobileMenuOpen && (
+              <motion.div
+                className="md:hidden border-t border-border"
+                initial={{ height: 0, opacity: 0 }}
+                animate={{ height: 'auto', opacity: 1 }}
+                exit={{ height: 0, opacity: 0 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="container-max py-6 space-y-4">
+                  <Link href="/careers" className="block text-pale-wood hover:text-cyan transition-colors py-2">Careers</Link>
+                  <Link href="/team" className="block text-pale-wood hover:text-cyan transition-colors py-2">Team</Link>
+                  <a 
+                    href="mailto:srivastavan@berkeley.edu"
+                    className="block btn btn-primary w-full text-center"
+                    style={{ background: '#f6f4f1', color: '#0e3638' }}
+                  >
+                    Contact Us
+                  </a>
+                </div>
+              </motion.div>
+            )}
+          </AnimatePresence>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center pt-[72px] relative overflow-hidden">
+      <section className="min-h-screen flex items-center pt-[72px] relative overflow-hidden" style={{
+        backgroundImage: 'url(/gradient2.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         {/* Abstract curved white lines */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-25">
           {/* Curved line 1 */}
@@ -709,7 +754,7 @@ export default function Home() {
           style={{ y: heroY, opacity: heroOpacity }}
         >
           <div className="grid lg:grid-cols-2 gap-20 items-center">
-            <div>
+            <div className="order-1 lg:order-1">
           <div className="relative">
             <motion.h1
               className="mb-12 leading-[0.85]"
@@ -750,7 +795,7 @@ export default function Home() {
                 <motion.div
                   className="absolute pointer-events-none"
                   style={{ 
-                    filter: 'drop-shadow(0 15px 40px rgba(0, 0, 0, 0.5)) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35))',
+                    filter: 'drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3))',
                     zIndex: 100,
                   }}
                   initial={{ scale: 0, rotate: -45, opacity: 0, x: cursorPos.x, y: cursorPos.y }}
@@ -792,8 +837,8 @@ export default function Home() {
                         style={{
                           width: '4px',
                           height: '70px',
-                          background: '#f2cbbd',
-                          boxShadow: '0 0 12px rgba(242, 203, 189, 0.8)',
+                          background: '#ffffff',
+                          boxShadow: '0 0 12px rgba(255, 255, 255, 0.8)',
                           transformOrigin: 'top',
                         }}
                       />
@@ -806,21 +851,18 @@ export default function Home() {
                         exit={{ opacity: 0, scale: 0.8 }}
                         transition={{ duration: 0.3 }}
                       >
-                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path 
-                            d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" 
-                            fill="#f2cbbd"
-                            stroke="#0e3638"
-                            strokeWidth="0.5"
-                            strokeLinejoin="round"
-                          />
-                        </svg>
+                      <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path 
+                          d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" 
+                          fill="#ffffff"
+                        />
+                      </svg>
                         
                         {/* Subtle glow effect */}
                         <motion.div
                           className="absolute inset-0 rounded-full"
                           style={{
-                            background: 'radial-gradient(circle, rgba(242, 203, 189, 0.4) 0%, transparent 70%)',
+                            background: 'radial-gradient(circle, rgba(255, 255, 255, 0.5) 0%, transparent 70%)',
                             filter: 'blur(12px)',
                             transform: 'scale(1.8)',
                           }}
@@ -847,7 +889,7 @@ export default function Home() {
                         style={{
                           boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
                           left: '30px',
-                          top: '-95px',
+                          top: '-70px',
                         }}
                       >
                         <span style={{ color: '#20b894' }} className="font-bold">+4</span>
@@ -948,12 +990,13 @@ export default function Home() {
 
         <motion.div
               style={{ y: codeY }}
-              className="relative"
+              className="relative order-2 lg:order-2"
         >
           <motion.div
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: mounted ? 1 : 0, scale: mounted ? 1 : 0.95 }}
                 transition={{ duration: 1.2, delay: 0.3, ease: [0.16, 1, 0.3, 1] }}
+                className="hidden lg:block"
               >
                 <ComprehensiveIDE />
                </motion.div>
@@ -1423,7 +1466,12 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="py-20 bg-bg-tertiary border-t border-border">
+      <footer className="py-20 border-t border-border relative" style={{
+        backgroundImage: 'url(/gradient-footer.png)',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}>
         <div className="container-max">
           <div className="grid md:grid-cols-5 gap-12 mb-16">
             <div className="md:col-span-2">
