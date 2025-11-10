@@ -12,7 +12,7 @@ export default function SecurityScanner() {
         <div className="container-max">
           <div className="flex items-center justify-between h-[72px]">
             <Link href="/">
-              <span className="text-[24px] font-light">triage.</span>
+              <Image src="/triage.png" alt="Triage" width={100} height={28} className="h-7 w-auto" style={{ height: '28px', width: 'auto' }} />
             </Link>
             <div className="flex items-center gap-8 text-[15px]">
               <Link href="/" className="hover:text-cyan transition-colors">Product</Link>

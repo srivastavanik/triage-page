@@ -35,33 +35,74 @@ export const AllChecksPassed = () => {
   );
 };
 
-// Files Changed Component
+// Files Changed Component with Diff Preview
 export const FilesChanged = () => {
   const [expandedFile, setExpandedFile] = useState(0);
 
   const files = [
-    { name: 'backend/src/controllers/models.controller.ts', changes: '+13 -13' },
-    { name: 'backend/src/routes/external-auth.routes.ts', changes: '+84 -1' },
-    { name: 'backend/src/controllers/chat.controller.ts', changes: '+229 -707' }
+    { 
+      name: 'backend/src/controllers/models.controller.ts', 
+      changes: '+13 -13',
+      diff: {
+        removed: ['  if (hasAttachments === \'true\') {', '    const hasImages = attachmentTypes && attachmentTypes.includes(\'image\');'],
+        added: ['  if (typeof hasAttachments === \'string\' && hasAttachments === \'true\') {', '    const hasImages = typeof attachmentTypesStr === \'string\' ? attachmentTypesStr.includes(\'image\') : false;']
+      }
+    },
+    { 
+      name: 'backend/src/routes/external-auth.routes.ts', 
+      changes: '+84 -1',
+      diff: {
+        removed: ['import { Router } from \'express\';'],
+        added: ['import { Router } from \'express\';', 'import { rateLimit } from \'express-rate-limit\';', 'import { validateAuth } from \'../middleware/auth\';']
+      }
+    },
+    { 
+      name: 'backend/src/controllers/chat.controller.ts', 
+      changes: '+229 -707',
+      diff: {
+        removed: ['  console.log(\'Performing web search for trial user:\', message);', '  searchResults = await searchService.webSearch(message, 5);'],
+        added: ['  const sanitizedMessage = DOMPurify.sanitize(message);', '  console.log(\'Performing web search for trial user:\', sanitizedMessage);', '  searchResults = await searchService.webSearch(sanitizedMessage, 5);']
+      }
+    }
   ];
 
   return (
     <div className="files-changed-widget">
       <div className="files-header">
+        <span className="files-label">FILES MODIFIED</span>
+      </div>
+      <div className="files-summary">
         <span className="files-count">{files.length} files changed</span>
         <span className="files-stats">+383 -777</span>
       </div>
       <div className="files-list">
         {files.map((file, i) => (
-          <button
-            key={i}
-            className={`file-item ${expandedFile === i ? 'expanded' : ''}`}
-            onClick={() => setExpandedFile(i)}
-          >
-            <span className="file-toggle">{expandedFile === i ? '▼' : '▶'}</span>
-            <span className="file-name">{file.name}</span>
-            <span className="file-changes">{file.changes}</span>
-          </button>
+          <div key={i} className="file-item-wrapper">
+            <button
+              className={`file-item ${expandedFile === i ? 'expanded' : ''}`}
+              onClick={() => setExpandedFile(expandedFile === i ? -1 : i)}
+            >
+              <span className="file-toggle">{expandedFile === i ? '▼' : '▶'}</span>
+              <span className="file-name">{file.name}</span>
+              <span className="file-changes">{file.changes}</span>
+            </button>
+            {expandedFile === i && (
+              <div className="file-diff-preview">
+                {file.diff.removed.map((line, j) => (
+                  <div key={`r-${j}`} className="diff-preview-line removed">
+                    <span className="preview-marker">-</span>
+                    <span className="preview-code">{line}</span>
+                  </div>
+                ))}
+                {file.diff.added.map((line, j) => (
+                  <div key={`a-${j}`} className="diff-preview-line added">
+                    <span className="preview-marker">+</span>
+                    <span className="preview-code">{line}</span>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
         ))}
       </div>
     </div>

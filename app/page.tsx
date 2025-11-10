@@ -8,6 +8,7 @@ import { SecurityHeatmap, CommitTimeline, VulnerabilityPipeline, TestExecution, 
 import { AutoUnitTests, GitActionsFlow, LiveDiffHighlight } from '../components/AnimatedWorkflow';
 import { PlanVisual, CodeVisual, BuildVisual, ReviewVisual, ReleaseVisual, OperateVisual } from '../components/PhaseVisuals';
 import { AllChecksPassed, FilesChanged, CodeDiffView, MergeStatus, DeploymentSuccess } from '../components/GitHubElements';
+import { IDEAndDashboard } from '../components/ComprehensiveDashboard';
 
 // Comprehensive IDE with Advanced Animations
 const ComprehensiveIDE = () => {
@@ -694,6 +695,13 @@ export default function Home() {
               </p>
             </div>
           </div>
+
+          <div className="reveal mt-20">
+            <div className="visual-label mb-4 container-max">PLATFORM OVERVIEW</div>
+            <div className="overflow-hidden">
+              <IDEAndDashboard />
+            </div>
+          </div>
         </div>
       </section>
 
@@ -948,32 +956,53 @@ export default function Home() {
       </section>
 
       {/* CTA */}
-      <section className="section-padding bg-cyan text-midnight-green text-center">
+      <section className="section-padding bg-cyan text-midnight-green relative overflow-hidden">
+        {/* Abstract white bars */}
+        <div className="absolute inset-0 pointer-events-none opacity-10">
+          <motion.div
+            className="absolute top-1/4 left-0 h-px w-1/3"
+            style={{ background: 'linear-gradient(90deg, #f6f4f1 0%, transparent 100%)' }}
+            animate={{ scaleX: [0, 1, 0] }}
+            transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
+          />
+        </div>
+        
         <div className="container-max">
         <motion.div
             initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
             viewport={{ once: false }}
+            className="text-center"
           >
-            <h2 className="mb-8 text-midnight-green">Start securing your code today</h2>
-            <p className="text-[24px] text-midnight-green/80 mb-12 max-w-2xl mx-auto">
-              Join teams shipping secure code faster with Triage
+            <h2 className="mb-6 text-midnight-green text-[48px] font-light">
+              Ready to <span className="highlight-solid-tan">embed security</span> into your workflow?
+            </h2>
+            <p className="text-[20px] mb-4 max-w-3xl mx-auto" style={{ color: '#0e3638' }}>
+              Join teams at Berkeley, Stanford, NYU, and more shipping secure code with AI-powered security
             </p>
-            <div className="flex gap-4 justify-center">
+            <p className="text-[16px] text-midnight-green/60 mb-12 max-w-2xl mx-auto">
+              Get in touch to see how Triage can transform your security posture
+            </p>
+            <div className="flex gap-4 justify-center mb-8">
               <a 
                 href="mailto:srivastavan@berkeley.edu"
-                className="btn btn-large bg-midnight-green text-pale-wood hover:scale-105 transition-all"
+                className="btn btn-large hover:scale-105 transition-all"
+                style={{ background: '#0e3638', color: '#f6f4f1', padding: '18px 40px', fontSize: '18px' }}
               >
-                Contact Us
+                Contact Us →
               </a>
               <Link 
                 href="/careers"
-                className="btn btn-large bg-transparent border-2 border-midnight-green text-midnight-green hover:bg-midnight-green hover:text-pale-wood"
+                className="btn btn-large hover:scale-105 transition-all"
+                style={{ background: 'transparent', borderWidth: '2px', borderStyle: 'solid', borderColor: '#0e3638', color: '#0e3638', padding: '18px 40px', fontSize: '18px', fontWeight: '500' }}
               >
-                View Careers
+                View Open Positions
               </Link>
-          </div>
+            </div>
+            <p className="text-[14px] text-midnight-green/50">
+              srivastavan@berkeley.edu
+            </p>
         </motion.div>
         </div>
       </section>
