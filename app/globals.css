@@ -4576,8 +4576,12 @@
   }
 
   .career-listing-collapsible {
-    border-bottom: 1px solid var(--color-pale-wood)20;
+    border-bottom: 1px solid rgba(242, 203, 189, 0.15);
     transition: all 0.3s ease;
+  }
+
+  .career-listing-collapsible:last-child {
+    border-bottom: none;
   }
 
   .career-listing-collapsible:hover {
@@ -5141,9 +5145,39 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    width: calc(100vw - 40px);
-    margin-left: calc(50% - 50vw + 20px);
-    margin-right: calc(50% - 50vw + 20px);
+    width: 100%;
+  }
+
+  .full-bleed {
+    width: 100vw;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    padding-left: 48px;
+    padding-right: 48px;
+    box-sizing: border-box;
+  }
+
+  .platform-overview-block {
+    display: grid;
+    row-gap: 32px;
+  }
+
+  .platform-overview-copy {
+    max-width: 880px;
+  }
+
+  @media (max-width: 1024px) {
+    .full-bleed {
+      padding-left: 32px;
+      padding-right: 32px;
+    }
+  }
+
+  @media (max-width: 640px) {
+    .full-bleed {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
   }
 
   .dashboard-panel,

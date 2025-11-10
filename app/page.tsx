@@ -254,6 +254,15 @@ const ComprehensiveIDE = () => {
 export default function Home() {
   const [mounted, setMounted] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
+  const [animPhase, setAnimPhase] = useState(0);
+  const [displayText, setDisplayText] = useState({ line1: 'Specialized Security', line2: 'Teams?' });
+  const [isHighlighted, setIsHighlighted] = useState(false);
+  const [cursorPos, setCursorPos] = useState({ x: 0, y: 0 });
+  const [showDiff, setShowDiff] = useState(false);
+  const [isTextCursor, setIsTextCursor] = useState(false);
+  const [binaryParticles, setBinaryParticles] = useState<Array<{id: number, x: number, y: number, char: string}>>([]);
+  const [binaryColumns, setBinaryColumns] = useState<Array<Array<{char: string, delay: number, duration: number}>>>([]);
+  
   const { scrollY, scrollYProgress } = useScroll();
   
   const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 30 });
@@ -263,6 +272,21 @@ export default function Home() {
 
   useEffect(() => {
     setMounted(true);
+
+    // Generate binary columns on client-side only
+    const columns = [];
+    for (let col = 0; col < 3; col++) {
+      const columnData = [];
+      for (let i = 0; i < 18; i++) {
+        columnData.push({
+          char: Math.random() > 0.5 ? '1' : '0',
+          delay: i * (0.12 + col * 0.03) + col * 0.5,
+          duration: 2.5 + col * 0.3 + Math.random() * 1.5
+        });
+      }
+      columns.push(columnData);
+    }
+    setBinaryColumns(columns);
 
     const observer = new IntersectionObserver(
       (entries) => {
@@ -285,6 +309,96 @@ export default function Home() {
 
     return () => observer.disconnect();
   }, []);
+
+  // Hero header animation sequence
+  useEffect(() => {
+    if (!mounted) return;
+
+    const runSequence = async () => {
+      // Phase 0: Initial state with "Specialized Security Teams?" (1s pause)
+      await new Promise(r => setTimeout(r, 1000));
+      
+      // Phase 1: Cursor appears lower and farther right
+      setAnimPhase(1);
+      setCursorPos({ x: 450, y: -150 });
+      await new Promise(r => setTimeout(r, 600));
+      
+      // Phase 2: Cursor sweeps to bottom-right to select all text
+      setCursorPos({ x: 520, y: 30 });
+      await new Promise(r => setTimeout(r, 800));
+      
+      // Phase 3: Highlight all text in red
+      setIsHighlighted(true);
+      await new Promise(r => setTimeout(r, 400));
+      
+      // Phase 4: Generate binary particles
+      const particles = [];
+      for (let i = 0; i < 30; i++) {
+        particles.push({
+          id: i,
+          x: Math.random() * 600 - 50,
+          y: Math.random() * 220 - 180,
+          char: Math.random() > 0.5 ? '1' : '0'
+        });
+      }
+      setBinaryParticles(particles);
+      await new Promise(r => setTimeout(r, 200));
+      
+      // Phase 5: Delete text
+      setDisplayText({ line1: '', line2: '' });
+      setIsHighlighted(false);
+      await new Promise(r => setTimeout(r, 1200));
+      setBinaryParticles([]);
+      await new Promise(r => setTimeout(r, 300));
+      
+      // Phase 6: Move cursor back to start and click
+      setCursorPos({ x: 0, y: -180 });
+      await new Promise(r => setTimeout(r, 500));
+      
+      // Phase 7: Click animation (scale down and up)
+      setAnimPhase(2);
+      await new Promise(r => setTimeout(r, 150));
+      
+      // Phase 8: Transform to blinking text cursor
+      setIsTextCursor(true);
+      setAnimPhase(3);
+      await new Promise(r => setTimeout(r, 400));
+      
+      // Phase 9: Type "Security that" - cursor follows text
+      const text1 = 'Security that';
+      for (let i = 0; i <= text1.length; i++) {
+        setDisplayText(prev => ({ ...prev, line1: text1.substring(0, i) }));
+        setCursorPos({ x: i * 46, y: -180 });
+        await new Promise(r => setTimeout(r, 80));
+      }
+      
+      await new Promise(r => setTimeout(r, 200));
+      
+      // Phase 10: Move to second line and type "writes itself" - cursor follows text
+      setCursorPos({ x: 0, y: -100 });
+      await new Promise(r => setTimeout(r, 300));
+      
+      const text2 = 'writes itself';
+      for (let i = 0; i <= text2.length; i++) {
+        setDisplayText(prev => ({ ...prev, line2: text2.substring(0, i) }));
+        setCursorPos({ x: i * 60, y: -100 });
+        await new Promise(r => setTimeout(r, 80));
+      }
+      
+      // Phase 11: Transform back to pointer cursor
+      await new Promise(r => setTimeout(r, 300));
+      setIsTextCursor(false);
+      await new Promise(r => setTimeout(r, 250));
+      
+      // Phase 12: Move to final resting position and show green highlight + diff
+      setCursorPos({ x: 510, y: -180 });
+      await new Promise(r => setTimeout(r, 400));
+      setShowDiff(true);
+      setAnimPhase(4);
+    };
+
+    runSequence();
+  }, [mounted]);
 
   return (
     <main className="relative">
@@ -398,8 +512,8 @@ export default function Home() {
                         <a href="#" className="mega-item">
                           <span className="mega-icon">▣</span>
                           <div>
-                            <div className="mega-item-title">IDE Extensions</div>
-                            <div className="mega-item-desc">VS Code, IntelliJ, Sublime, Cursor</div>
+                            <div className="mega-item-title">Browser-Based IDE Integration</div>
+                            <div className="mega-item-desc">Real-time security in your web IDE - no downloads required</div>
                           </div>
                         </a>
                         <a href="#" className="mega-item">
@@ -447,27 +561,148 @@ export default function Home() {
 
       {/* Hero Section */}
       <section className="min-h-screen flex items-center pt-[72px] relative overflow-hidden">
-        {/* Abstract white bars */}
-        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-30">
-        <motion.div
-            className="absolute top-1/4 left-0 h-px w-full"
-            style={{ background: 'linear-gradient(90deg, transparent 0%, #f6f4f1 50%, transparent 100%)' }}
-          animate={{
-              scaleX: [0, 1, 0],
+        {/* Abstract curved white lines */}
+        <div className="absolute inset-0 overflow-hidden pointer-events-none opacity-25">
+          {/* Curved line 1 */}
+          <motion.svg
+            className="absolute top-1/4 left-0 w-full h-32"
+            viewBox="0 0 1200 100"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ 
+              opacity: [0, 1, 0],
               x: ['-100%', '0%', '100%']
             }}
-            transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        />
-        <motion.div
-            className="absolute bottom-1/3 right-0 h-px w-2/3"
-            style={{ background: 'linear-gradient(90deg, transparent 0%, #f6f4f1 100%)' }}
-          animate={{
-              scaleX: [0, 1],
-              opacity: [0, 1, 0]
+            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+          >
+            <path
+              d="M0,50 Q300,10 600,50 T1200,50"
+              stroke="url(#gradient1)"
+              strokeWidth="1"
+              fill="none"
+            />
+            <defs>
+              <linearGradient id="gradient1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#f6f4f1" stopOpacity="0" />
+                <stop offset="50%" stopColor="#f6f4f1" stopOpacity="1" />
+                <stop offset="100%" stopColor="#f6f4f1" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+          </motion.svg>
+
+          {/* Curved line 2 */}
+          <motion.svg
+            className="absolute top-1/3 left-0 w-full h-32"
+            viewBox="0 0 1200 100"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ 
+              opacity: [0, 0.8, 0],
+              x: ['100%', '0%', '-100%']
             }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 2 }}
-          />
+            transition={{ duration: 10, repeat: Infinity, ease: "easeInOut", delay: 3 }}
+          >
+            <path
+              d="M0,30 Q300,70 600,30 T1200,30"
+              stroke="url(#gradient2)"
+              strokeWidth="1"
+              fill="none"
+            />
+            <defs>
+              <linearGradient id="gradient2" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#f6f4f1" stopOpacity="0" />
+                <stop offset="50%" stopColor="#f6f4f1" stopOpacity="0.8" />
+                <stop offset="100%" stopColor="#f6f4f1" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+          </motion.svg>
+
+          {/* Curved line 3 */}
+          <motion.svg
+            className="absolute bottom-1/3 left-0 w-full h-32"
+            viewBox="0 0 1200 100"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ 
+              opacity: [0, 0.6, 0],
+              x: ['-50%', '50%', '150%']
+            }}
+            transition={{ duration: 14, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+          >
+            <path
+              d="M0,60 Q200,20 400,60 T800,60 Q1000,20 1200,60"
+              stroke="url(#gradient3)"
+              strokeWidth="1"
+              fill="none"
+            />
+            <defs>
+              <linearGradient id="gradient3" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#f6f4f1" stopOpacity="0" />
+                <stop offset="30%" stopColor="#f6f4f1" stopOpacity="0.6" />
+                <stop offset="70%" stopColor="#f6f4f1" stopOpacity="0.6" />
+                <stop offset="100%" stopColor="#f6f4f1" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+          </motion.svg>
+
+          {/* Curved line 4 - slower wave */}
+          <motion.svg
+            className="absolute top-1/2 left-0 w-full h-32"
+            viewBox="0 0 1200 100"
+            fill="none"
+            initial={{ opacity: 0 }}
+            animate={{ 
+              opacity: [0, 0.5, 0],
+              x: ['80%', '-20%', '-120%']
+            }}
+            transition={{ duration: 16, repeat: Infinity, ease: "easeInOut", delay: 6 }}
+          >
+            <path
+              d="M0,45 Q150,10 300,45 T600,45 Q750,80 900,45 T1200,45"
+              stroke="url(#gradient4)"
+              strokeWidth="1"
+              fill="none"
+            />
+            <defs>
+              <linearGradient id="gradient4" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#f6f4f1" stopOpacity="0" />
+                <stop offset="50%" stopColor="#f6f4f1" stopOpacity="0.5" />
+                <stop offset="100%" stopColor="#f6f4f1" stopOpacity="0" />
+              </linearGradient>
+            </defs>
+          </motion.svg>
         </div>
+
+        {/* Glimmering Binary Columns */}
+        {mounted && binaryColumns.length > 0 && (
+          <div className="absolute left-0 top-1/4 bottom-1/4 pointer-events-none flex gap-8 opacity-15">
+            {binaryColumns.map((column, colIndex) => (
+              <div key={`col-${colIndex}`} className={`flex flex-col gap-6 font-mono text-[14px] ${colIndex === 0 ? 'ml-6' : ''}`}>
+                {column.map((item, i) => (
+                  <motion.div
+                    key={`${colIndex}-${i}`}
+                    className="text-white"
+                    style={{
+                      textShadow: '0 0 8px rgba(255, 255, 255, 0.5)',
+                      fontWeight: '500',
+                    }}
+                    animate={{
+                      opacity: [0.2, colIndex === 0 ? 1 : colIndex === 1 ? 0.9 : 0.8, 0.2],
+                    }}
+                    transition={{
+                      duration: item.duration,
+                      repeat: Infinity,
+                      delay: item.delay,
+                      ease: "easeInOut"
+                    }}
+                  >
+                    {item.char}
+                  </motion.div>
+                ))}
+              </div>
+            ))}
+          </div>
+        )}
         
         <motion.div
           className="container-max w-full relative z-10"
@@ -475,25 +710,198 @@ export default function Home() {
         >
           <div className="grid lg:grid-cols-2 gap-20 items-center">
             <div>
-          <motion.h1
-                  className="mb-8 leading-[0.85]"
-                  initial={{ opacity: 0, x: -50 }}
-                  animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : -50 }}
-                  transition={{ duration: 1, ease: [0.16, 1, 0.3, 1] }}
+          <div className="relative">
+            <motion.h1
+              className="mb-12 leading-[0.85]"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: mounted ? 1 : 0 }}
+              transition={{ duration: 0.5 }}
+            >
+              <span 
+                className={isHighlighted || showDiff ? '' : 'highlight-solid-tan'}
+                style={{
+                  background: isHighlighted ? '#ff4444' : showDiff ? '#20b894' : '',
+                  color: isHighlighted || showDiff ? '#fff' : '',
+                  padding: isHighlighted ? '0 8px' : showDiff ? '8px 16px' : '',
+                  transition: 'all 0.3s ease',
+                  display: 'inline-block'
+                }}
+              >
+                {displayText.line1}
+              </span>
+              <br />
+              <span 
+                className={showDiff ? '' : 'text-cyan'}
+                style={{
+                  background: isHighlighted ? '#ff4444' : showDiff ? '#20b894' : '',
+                  color: isHighlighted || showDiff ? '#fff' : '',
+                  padding: isHighlighted ? '0 8px' : showDiff ? '8px 16px' : '',
+                  transition: 'all 0.3s ease',
+                  display: 'inline-block'
+                }}
+              >
+                {displayText.line2}
+              </span>
+            </motion.h1>
+            
+            {/* Animated Browser Cursor */}
+            <AnimatePresence>
+              {animPhase > 0 && (
+                <motion.div
+                  className="absolute pointer-events-none"
+                  style={{ 
+                    filter: 'drop-shadow(0 15px 40px rgba(0, 0, 0, 0.5)) drop-shadow(0 6px 12px rgba(0, 0, 0, 0.35))',
+                    zIndex: 100,
+                  }}
+                  initial={{ scale: 0, rotate: -45, opacity: 0, x: cursorPos.x, y: cursorPos.y }}
+                  animate={{ 
+                    scale: animPhase === 2 ? 0.85 : 1,
+                    rotate: 0, 
+                    opacity: 1,
+                    x: cursorPos.x,
+                    y: cursorPos.y,
+                  }}
+                  exit={{ scale: 0, opacity: 0 }}
+                  transition={{ 
+                    scale: { duration: animPhase === 2 ? 0.1 : 0.5, ease: [0.34, 1.56, 0.64, 1] },
+                    rotate: { duration: 0.5, ease: [0.34, 1.56, 0.64, 1] },
+                    opacity: { duration: 0.3 },
+                    x: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+                    y: { duration: 0.6, ease: [0.16, 1, 0.3, 1] },
+                  }}
                 >
-                <span className="highlight-solid-tan">Security that</span>
-            <br />
-                <span className="text-cyan">writes itself</span>
-          </motion.h1>
+                  <AnimatePresence mode="wait">
+                    {isTextCursor ? (
+                      /* Blinking text cursor (caret) */
+                      <motion.div
+                        key="text-cursor"
+                        initial={{ opacity: 0, scaleY: 0 }}
+                        animate={{ 
+                          opacity: [1, 1, 0, 0],
+                          scaleY: 1
+                        }}
+                        exit={{ opacity: 0, scaleY: 0 }}
+                        transition={{
+                          scaleY: { duration: 0.2 },
+                          opacity: {
+                            duration: 1.2,
+                            repeat: Infinity,
+                            times: [0, 0.5, 0.5, 1]
+                          }
+                        }}
+                        style={{
+                          width: '4px',
+                          height: '70px',
+                          background: '#f2cbbd',
+                          boxShadow: '0 0 12px rgba(242, 203, 189, 0.8)',
+                          transformOrigin: 'top',
+                        }}
+                      />
+                    ) : (
+                      /* Pointer cursor */
+                      <motion.div
+                        key="pointer-cursor"
+                        initial={{ opacity: 0, scale: 0 }}
+                        animate={{ opacity: 1, scale: 1 }}
+                        exit={{ opacity: 0, scale: 0.8 }}
+                        transition={{ duration: 0.3 }}
+                      >
+                        <svg width="80" height="80" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path 
+                            d="M3 3L10.07 19.97L12.58 12.58L19.97 10.07L3 3Z" 
+                            fill="#f2cbbd"
+                            stroke="#0e3638"
+                            strokeWidth="0.5"
+                            strokeLinejoin="round"
+                          />
+                        </svg>
+                        
+                        {/* Subtle glow effect */}
+                        <motion.div
+                          className="absolute inset-0 rounded-full"
+                          style={{
+                            background: 'radial-gradient(circle, rgba(242, 203, 189, 0.4) 0%, transparent 70%)',
+                            filter: 'blur(12px)',
+                            transform: 'scale(1.8)',
+                          }}
+                          animate={{
+                            opacity: [0.6, 0.9, 0.6],
+                          }}
+                          transition={{
+                            duration: 2,
+                            repeat: Infinity,
+                            ease: "easeInOut"
+                          }}
+                        />
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                  
+                  {/* Diff Box */}
+                  <AnimatePresence>
+                    {showDiff && !isTextCursor && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 10, scale: 0.8 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        className="absolute bg-midnight-green border border-pale-wood/30 px-3 py-2 font-mono text-[14px] whitespace-nowrap rounded"
+                        style={{
+                          boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
+                          left: '40px',
+                          top: '-85px',
+                        }}
+                      >
+                        <span style={{ color: '#20b894' }} className="font-bold">+4</span>
+                        <span className="mx-2 text-pale-wood/40">/</span>
+                        <span style={{ color: '#ff4444' }} className="font-bold">-3</span>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </motion.div>
+              )}
+            </AnimatePresence>
+            
+            {/* Binary Particle Dissipation */}
+            <AnimatePresence>
+              {binaryParticles.map((particle) => (
+                <motion.div
+                  key={particle.id}
+                  className="absolute font-mono pointer-events-none"
+                  style={{
+                    fontSize: '20px',
+                    fontWeight: '500',
+                    left: `${particle.x}px`,
+                    top: `${particle.y}px`,
+                    color: '#f6f4f1',
+                    textShadow: '0 0 4px rgba(246, 244, 241, 0.3)',
+                  }}
+                  initial={{ opacity: 1, scale: 1, y: 0, x: 0 }}
+                  animate={{ 
+                    opacity: [1, 0.6, 0],
+                    scale: [1, 0.95, 0.85],
+                    y: particle.y < 0 ? -80 : 80,
+                    x: (Math.random() - 0.5) * 100,
+                  }}
+                  exit={{ opacity: 0 }}
+                  transition={{ 
+                    duration: 1.4,
+                    ease: [0.22, 1, 0.36, 1],
+                    opacity: { duration: 1.2 }
+                  }}
+                >
+                  {particle.char}
+                </motion.div>
+              ))}
+            </AnimatePresence>
+          </div>
 
-          <motion.p
+               <motion.p 
                   className="text-[20px] leading-[1.6] mb-12 max-w-lg"
                   initial={{ opacity: 0, x: -50 }}
                   animate={{ opacity: mounted ? 1 : 0, x: mounted ? 0 : -50 }}
                   transition={{ duration: 1, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
                 >
-                  AI-powered security that <span className="highlight-solid cyan text-cyan">embeds into your workflow</span>, finding and fixing vulnerabilities automatically through <span className="highlight-solid-tan">reinforcement learning</span>.
-          </motion.p>
+                  Get framework-aware fixes and inline security hints directly in your web IDE - no downloads, no setup.
+                </motion.p>
 
           <motion.div
                 className="flex gap-4 mb-16"
@@ -535,7 +943,7 @@ export default function Home() {
                   <div className="text-[36px] font-mono text-cyan mb-1">8.9M</div>
                   <div className="text-caption">learning signals</div>
                 </div>
-          </motion.div>
+              </motion.div>
         </div>
 
         <motion.div
@@ -623,7 +1031,7 @@ export default function Home() {
               {
                 num: '02',
                 title: 'Code',
-                desc: 'Inline security hints and framework-aware patch suggestions'
+                desc: 'Real-time browser-based assistant points out vulnerabilities as you code - no downloads needed'
               },
               {
                 num: '03',
@@ -697,9 +1105,16 @@ export default function Home() {
           </div>
 
           <div className="reveal mt-20">
-            <div className="visual-label mb-4 container-max">PLATFORM OVERVIEW</div>
-            <div className="overflow-hidden">
-              <IDEAndDashboard />
+            <div className="full-bleed platform-overview-block">
+              <div>
+                <div className="visual-label mb-4">PLATFORM OVERVIEW</div>
+                <p className="platform-overview-copy text-[17px] leading-[1.8] text-pale-wood/80">
+                  <span className="highlight-solid cyan text-cyan">No separate app to download.</span> Triage's browser-based assistant integrates directly into your web IDE, pointing out vulnerabilities as you build. Manage all security from one place - your existing development environment.
+                </p>
+              </div>
+              <div className="overflow-hidden">
+                <IDEAndDashboard />
+              </div>
             </div>
           </div>
         </div>
@@ -995,7 +1410,7 @@ export default function Home() {
               <Link 
                 href="/careers"
                 className="btn btn-large hover:scale-105 transition-all"
-                style={{ background: 'transparent', borderWidth: '2px', borderStyle: 'solid', borderColor: '#0e3638', color: '#0e3638', padding: '18px 40px', fontSize: '18px', fontWeight: '500' }}
+                style={{ background: '#0e3638', borderWidth: '2px', borderStyle: 'solid', borderColor: '#f6f4f1', color: '#f6f4f1', padding: '18px 40px', fontSize: '18px', fontWeight: '500' }}
               >
                 View Open Positions
               </Link>

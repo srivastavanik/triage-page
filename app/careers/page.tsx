@@ -2,6 +2,7 @@
 
 import { motion, AnimatePresence } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { useState } from 'react';
 
 export default function Careers() {
@@ -81,8 +82,15 @@ export default function Careers() {
       <nav className="fixed w-full top-0 z-50 backdrop-blur-dark border-b border-border">
         <div className="container-max">
           <div className="flex items-center justify-between h-[72px]">
-            <Link href="/">
-              <span className="text-[24px] font-light">triage.</span>
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt="Triage"
+                width={52}
+                height={52}
+                className="w-13 h-13 logo-filter"
+                style={{ width: '52px', height: '52px' }}
+              />
             </Link>
             <div className="flex items-center gap-8 text-[15px]">
               <Link href="/" className="hover:text-cyan transition-colors">Product</Link>
