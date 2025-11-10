@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CodeDiffView, MergeStatus } from '../../components/GitHubElements';
 
 export default function AutoPatch() {
@@ -10,7 +11,16 @@ export default function AutoPatch() {
       <nav className="fixed w-full top-0 z-50 backdrop-blur-dark border-b border-border">
         <div className="container-max">
           <div className="flex items-center justify-between h-[72px]">
-            <Link href="/"><span className="text-[24px] font-light">triage.</span></Link>
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt="Triage"
+                width={36}
+                height={36}
+                className="logo-filter"
+                style={{ width: 'auto', height: '36px' }}
+              />
+            </Link>
             <div className="flex items-center gap-8 text-[15px]">
               <Link href="/" className="hover:text-cyan transition-colors">Product</Link>
               <Link href="/careers" className="hover:text-cyan transition-colors">Careers</Link>

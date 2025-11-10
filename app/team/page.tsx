@@ -19,8 +19,15 @@ export default function Team() {
       <nav className="fixed w-full top-0 z-50 bg-cream/95 backdrop-blur-sm border-b border-midnight-green/10">
         <div className="container-max">
           <div className="flex items-center justify-between h-[72px]">
-            <Link href="/">
-              <span className="text-[24px] font-light text-midnight-green">triage.</span>
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt="Triage"
+                width={36}
+                height={36}
+                className="logo-filter"
+                style={{ width: 'auto', height: '36px' }}
+              />
             </Link>
             <div className="flex items-center gap-8 text-[15px] text-midnight-green/70">
               <Link href="/" className="hover:text-midnight-green transition-colors">Product</Link>
@@ -116,10 +123,7 @@ export default function Team() {
             animate={{ opacity: 1 }}
             transition={{ delay: 1 }}
           >
-            <h3 className="text-[36px] font-light mb-4">Rest of the Team</h3>
-            <p className="text-[20px] mb-12" style={{ color: 'rgba(14, 54, 56, 0.6)' }}>
-              Coming Soon
-            </p>
+            <h3 className="text-[36px] font-light mb-12">Rest of Team: Coming Soon</h3>
             
             <div>
               <p className="text-[18px] mb-6 font-light">Want to Join Us?</p>

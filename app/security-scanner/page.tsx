@@ -12,8 +12,15 @@ export default function SecurityScanner() {
       <nav className="fixed w-full top-0 z-50 backdrop-blur-dark border-b border-border">
         <div className="container-max">
           <div className="flex items-center justify-between h-[72px]">
-            <Link href="/">
-              <Image src="/triage.png" alt="Triage" width={100} height={28} className="h-7 w-auto" style={{ height: '28px', width: 'auto' }} />
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/logo.png"
+                alt="Triage"
+                width={36}
+                height={36}
+                className="logo-filter"
+                style={{ width: 'auto', height: '36px' }}
+              />
             </Link>
             <div className="flex items-center gap-8 text-[15px]">
               <Link href="/" className="hover:text-cyan transition-colors">Product</Link>

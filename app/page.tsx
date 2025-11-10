@@ -324,7 +324,7 @@ export default function Home() {
       await new Promise(r => setTimeout(r, 600));
       
       // Phase 2: Cursor sweeps to bottom-right to select all text
-      setCursorPos({ x: 520, y: 30 });
+      setCursorPos({ x: 480, y: 30 });
       await new Promise(r => setTimeout(r, 800));
       
       // Phase 3: Highlight all text in red
@@ -336,7 +336,7 @@ export default function Home() {
       for (let i = 0; i < 30; i++) {
         particles.push({
           id: i,
-          x: Math.random() * 600 - 50,
+          x: Math.random() * 520 - 50,
           y: Math.random() * 220 - 180,
           char: Math.random() > 0.5 ? '1' : '0'
         });
@@ -368,7 +368,7 @@ export default function Home() {
       const text1 = 'Security that';
       for (let i = 0; i <= text1.length; i++) {
         setDisplayText(prev => ({ ...prev, line1: text1.substring(0, i) }));
-        setCursorPos({ x: i * 46, y: -180 });
+        setCursorPos({ x: i * 32, y: -180 });
         await new Promise(r => setTimeout(r, 80));
       }
       
@@ -381,7 +381,7 @@ export default function Home() {
       const text2 = 'writes itself';
       for (let i = 0; i <= text2.length; i++) {
         setDisplayText(prev => ({ ...prev, line2: text2.substring(0, i) }));
-        setCursorPos({ x: i * 60, y: -100 });
+        setCursorPos({ x: i * 40, y: -100 });
         await new Promise(r => setTimeout(r, 80));
       }
       
@@ -391,7 +391,7 @@ export default function Home() {
       await new Promise(r => setTimeout(r, 250));
       
       // Phase 12: Move to final resting position and show green highlight + diff
-      setCursorPos({ x: 510, y: -180 });
+      setCursorPos({ x: 470, y: -80 });
       await new Promise(r => setTimeout(r, 400));
       setShowDiff(true);
       setAnimPhase(4);
@@ -416,10 +416,10 @@ export default function Home() {
           <Image
             src="/logo.png"
             alt="Triage"
-                width={52}
-                height={52}
-                className="w-13 h-13 logo-filter"
-                style={{ width: '52px', height: '52px' }}
+                width={36}
+                height={36}
+                className="logo-filter"
+                style={{ width: 'auto', height: '36px' }}
               />
             </div>
             
@@ -784,7 +784,7 @@ export default function Home() {
                         transition={{
                           scaleY: { duration: 0.2 },
                           opacity: {
-                            duration: 1.2,
+                            duration: 0.7,
                             repeat: Infinity,
                             times: [0, 0.5, 0.5, 1]
                           }
@@ -846,8 +846,8 @@ export default function Home() {
                         className="absolute bg-midnight-green border border-pale-wood/30 px-3 py-2 font-mono text-[14px] whitespace-nowrap rounded"
                         style={{
                           boxShadow: '0 4px 12px rgba(0, 0, 0, 0.3)',
-                          left: '40px',
-                          top: '-85px',
+                          left: '30px',
+                          top: '-95px',
                         }}
                       >
                         <span style={{ color: '#20b894' }} className="font-bold">+4</span>
@@ -1430,10 +1430,10 @@ export default function Home() {
               <Image
                 src="/logo.png"
                 alt="Triage"
-                width={40}
-                height={40}
-                className="w-10 h-10 logo-filter mb-6"
-                style={{ width: '40px', height: '40px' }}
+                width={60}
+                height={60}
+                className="w-15 h-15 logo-filter mb-6"
+                style={{ width: '60px', height: '60px' }}
               />
               <p className="text-pale-wood/60 mb-8 max-w-sm">
                 AI-powered security that embeds into your development workflow.
