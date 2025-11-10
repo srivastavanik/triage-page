@@ -1430,10 +1430,10 @@ export default function Home() {
               <Image
                 src="/logo.png"
                 alt="Triage"
-                width={60}
-                height={60}
-                className="w-15 h-15 logo-filter mb-6"
-                style={{ width: '60px', height: '60px' }}
+                width={40}
+                height={40}
+                className="logo-filter mb-6"
+                style={{ width: 'auto', height: '40px' }}
               />
               <p className="text-pale-wood/60 mb-8 max-w-sm">
                 AI-powered security that embeds into your development workflow.

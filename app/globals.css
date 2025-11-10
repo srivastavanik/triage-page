@@ -2214,8 +2214,7 @@
     padding: 32px;
     font-family: var(--font-family-mono);
     width: 100%;
-    overflow-x: auto;
-    overflow-y: hidden;
+    overflow: visible;
   }
 
   .timeline-header {
@@ -2234,15 +2233,28 @@
 
   .security-heatmap-grid {
     margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: fit-content;
     max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid var(--color-pale-wood);
+    border-radius: 12px;
+    padding: 20px;
+    background: rgba(14, 54, 56, 0.2);
+    overflow: hidden;
+    box-sizing: border-box;
   }
 
   .heatmap-weeks {
     display: grid;
-    grid-template-columns: 24px repeat(52, 11px);
+    grid-template-columns: 24px repeat(25, 11px);
     gap: 3px;
     margin-bottom: 8px;
+    overflow: hidden;
+    max-width: 100%;
   }
 
   .week-spacer {
@@ -2259,14 +2271,16 @@
     display: flex;
     flex-direction: column;
     gap: 3px;
-    max-width: fit-content;
+    overflow: hidden;
+    max-width: 100%;
   }
 
   .heatmap-row {
     display: flex;
     gap: 3px;
     align-items: center;
-    max-width: fit-content;
+    overflow: hidden;
+    max-width: 100%;
   }
 
   .row-number {
@@ -2280,7 +2294,8 @@
   .row-cells {
     display: flex;
     gap: 3px;
-    max-width: fit-content;
+    overflow: hidden;
+    max-width: 100%;
   }
 
   .heatmap-cell {
@@ -2320,6 +2335,11 @@
     outline-offset: 1px;
     transform: scale(1.2);
     z-index: 100;
+    cursor: pointer;
+  }
+  
+  .cell-wrapper {
+    position: relative;
   }
 
   /* Commit Tooltip */
@@ -2394,6 +2414,8 @@
     margin-top: 24px;
     padding-top: 20px;
     border-top: 1px solid var(--color-border);
+    overflow: hidden;
+    max-width: 100%;
   }
 
   .legend-text {

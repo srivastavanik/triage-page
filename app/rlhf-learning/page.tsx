@@ -15,10 +15,10 @@ export default function RLHFLearning() {
               <Image
                 src="/logo.png"
                 alt="Triage"
-                width={52}
-                height={52}
-                className="w-13 h-13 logo-filter"
-                style={{ width: '52px', height: '52px' }}
+                width={36}
+                height={36}
+                className="logo-filter"
+                style={{ width: 'auto', height: '36px' }}
               />
             </Link>
             <div className="flex items-center gap-8 text-[15px]">

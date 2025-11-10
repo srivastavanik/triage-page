@@ -69,17 +69,17 @@ export const SecurityHeatmap = () => {
 // Enhanced Commit Security Timeline with Heatmap
 export const CommitTimeline = () => {
   const [hoveredCell, setHoveredCell] = useState<{row: number, col: number} | null>(null);
-  const weeks = ['W1', 'W13', 'W26', 'W39', 'W52'];
+  const weeks = ['W1', 'W7', 'W13', 'W19', 'W25'];
   
-  // White to bright cyan gradient data (7 rows x 52 columns for full width)
+  // White to bright cyan gradient data (7 rows x 50 columns)
   const heatmapPattern = [
-    'level4,level3,level2,level0,level4,level1,level3,level4,level0,level2,level4,level2,level3,level4,level4,level2,level1,level3,level0,level4,level3,level2,level4,level1,level3,level0,level4,level2,level3,level4,level1,level2,level0,level3,level4,level2,level1,level4,level3,level0,level2,level4,level3,level1,level2,level4,level0,level3,level4,level2,level1,level3',
-    'level2,level4,level0,level3,level1,level4,level2,level3,level4,level0,level3,level4,level2,level1,level3,level0,level4,level2,level1,level3,level4,level0,level2,level3,level4,level1,level0,level3,level2,level4,level3,level1,level4,level0,level2,level3,level4,level2,level0,level1,level3,level4,level2,level3,level0,level4,level1,level2,level3,level4,level0,level1',
-    'level3,level1,level4,level2,level0,level3,level4,level1,level2,level3,level0,level4,level2,level3,level1,level4,level0,level3,level2,level4,level1,level0,level3,level4,level2,level1,level3,level0,level4,level2,level3,level4,level1,level0,level2,level4,level3,level1,level0,level2,level4,level3,level0,level1,level4,level2,level3,level0,level4,level1,level2,level3',
-    'level0,level4,level2,level3,level1,level4,level0,level3,level2,level4,level1,level0,level3,level2,level4,level3,level0,level1,level4,level2,level3,level0,level4,level1,level2,level3,level4,level0,level1,level2,level3,level4,level0,level2,level1,level3,level4,level0,level2,level3,level1,level4,level0,level2,level3,level4,level1,level0,level3,level2,level4,level1',
-    'level3,level0,level4,level1,level2,level3,level4,level0,level2,level1,level3,level4,level2,level0,level3,level1,level4,level2,level0,level3,level4,level1,level0,level2,level3,level4,level1,level3,level0,level4,level2,level1,level3,level0,level4,level2,level3,level1,level0,level4,level2,level3,level0,level1,level4,level3,level2,level0,level4,level1,level3,level2',
-    'level1,level3,level0,level4,level2,level1,level3,level4,level0,level2,level3,level1,level4,level0,level2,level3,level4,level1,level0,level2,level4,level3,level0,level1,level4,level2,level3,level0,level4,level1,level2,level3,level0,level4,level1,level2,level3,level4,level0,level1,level3,level2,level4,level0,level3,level1,level4,level2,level0,level3,level4,level1',
-    'level4,level2,level3,level0,level1,level4,level2,level3,level1,level0,level4,level3,level2,level0,level4,level1,level3,level2,level0,level4,level3,level1,level0,level2,level4,level3,level0,level1,level4,level2,level3,level0,level4,level2,level1,level3,level4,level0,level2,level1,level3,level4,level0,level2,level3,level1,level4,level0,level3,level2,level4,level1'
+    'level4,level3,level2,level0,level4,level1,level3,level4,level0,level2,level4,level2,level3,level4,level4,level2,level1,level3,level0,level4,level3,level2,level4,level1,level3,level0,level4,level2,level3,level4,level1,level2,level0,level3,level4,level2,level1,level4,level3,level0,level2,level4,level3,level1,level2,level4,level0,level3,level4,level2',
+    'level2,level4,level0,level3,level1,level4,level2,level3,level4,level0,level3,level4,level2,level1,level3,level0,level4,level2,level1,level3,level4,level0,level2,level3,level4,level1,level0,level3,level2,level4,level3,level1,level4,level0,level2,level3,level4,level2,level0,level1,level3,level4,level2,level3,level0,level4,level1,level2,level3,level4',
+    'level3,level1,level4,level2,level0,level3,level4,level1,level2,level3,level0,level4,level2,level3,level1,level4,level0,level3,level2,level4,level1,level0,level3,level4,level2,level1,level3,level0,level4,level2,level3,level4,level1,level0,level2,level4,level3,level1,level0,level2,level4,level3,level0,level1,level4,level2,level3,level0,level4,level1',
+    'level0,level4,level2,level3,level1,level4,level0,level3,level2,level4,level1,level0,level3,level2,level4,level3,level0,level1,level4,level2,level3,level0,level4,level1,level2,level3,level4,level0,level1,level2,level3,level4,level0,level2,level1,level3,level4,level0,level2,level3,level1,level4,level0,level2,level3,level4,level1,level0,level3,level2',
+    'level3,level0,level4,level1,level2,level3,level4,level0,level2,level1,level3,level4,level2,level0,level3,level1,level4,level2,level0,level3,level4,level1,level0,level2,level3,level4,level1,level3,level0,level4,level2,level1,level3,level0,level4,level2,level3,level1,level0,level4,level2,level3,level0,level1,level4,level3,level2,level0,level4,level1',
+    'level1,level3,level0,level4,level2,level1,level3,level4,level0,level2,level3,level1,level4,level0,level2,level3,level4,level1,level0,level2,level4,level3,level0,level1,level4,level2,level3,level0,level4,level1,level2,level3,level0,level4,level1,level2,level3,level4,level0,level1,level3,level2,level4,level0,level3,level1,level4,level2,level0,level3',
+    'level4,level2,level3,level0,level1,level4,level2,level3,level1,level0,level4,level3,level2,level0,level4,level1,level3,level2,level0,level4,level3,level1,level0,level2,level4,level3,level0,level1,level4,level2,level3,level0,level4,level2,level1,level3,level4,level0,level2,level1,level3,level4,level0,level2,level3,level1,level4,level0,level3,level2'
   ];
   
   const heatmapData = heatmapPattern.map(row => row.split(','));
@@ -118,16 +118,18 @@ export const CommitTimeline = () => {
       <div className="security-heatmap-grid">
         <div className="heatmap-weeks">
           <div className="week-spacer"></div>
-          {weeks.map((week, i) => (
-            <div key={i} className="week-label" style={{ gridColumn: `${2 + i * 13}` }}>{week}</div>
-          ))}
+          <div className="week-label" style={{ gridColumn: '2' }}>W1</div>
+          <div className="week-label" style={{ gridColumn: '8' }}>W7</div>
+          <div className="week-label" style={{ gridColumn: '14' }}>W13</div>
+          <div className="week-label" style={{ gridColumn: '20' }}>W19</div>
+          <div className="week-label" style={{ gridColumn: '25' }}>W25</div>
         </div>
         <div className="heatmap-rows">
           {heatmapData.map((row, i) => (
             <div key={i} className="heatmap-row">
               <div className="row-number">{i + 1}</div>
               <div className="row-cells">
-                {row.map((cell, j) => {
+                {row.slice(0, 25).map((cell, j) => {
                   const details = getCommitDetails(i, j);
                   return (
                     <div key={j} className="cell-wrapper">
