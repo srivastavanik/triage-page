@@ -387,13 +387,13 @@ export default function Home() {
                       </div>
                       <div className="mega-section">
                         <h4 className="mega-section-title">Platform & Deployment</h4>
-                        <a href="#" className="mega-item">
+                        <Link href="/cicd-integration" className="mega-item">
                           <span className="mega-icon">◑</span>
                           <div>
                             <div className="mega-item-title">CI/CD Integration</div>
                             <div className="mega-item-desc">GitHub, GitLab, Jenkins, CircleCI</div>
                           </div>
-                        </a>
+                        </Link>
                         <a href="#" className="mega-item">
                           <span className="mega-icon">▣</span>
                           <div>

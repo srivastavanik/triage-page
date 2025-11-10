@@ -1,0 +1,9 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "buildCommand": "cd triage-website && npm run build",
+  "devCommand": "cd triage-website && npm run dev",
+  "installCommand": "cd triage-website && npm install",
+  "framework": "nextjs",
+  "outputDirectory": "triage-website/.next"
+}
+
