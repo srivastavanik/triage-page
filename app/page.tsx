@@ -297,14 +297,16 @@ export default function Home() {
       <nav className="fixed w-full top-0 z-50 backdrop-blur-dark border-b border-border">
         <div className="container-max">
           <div className="flex items-center justify-between h-[72px]">
+            <div className="flex items-center gap-3">
           <Image
-              src="/triage.png"
+            src="/logo.png"
             alt="Triage"
-              width={120}
-              height={32}
-              className="h-8 w-auto"
-              style={{ height: '32px', width: 'auto' }}
-            />
+                width={52}
+                height={52}
+                className="w-13 h-13 logo-filter"
+                style={{ width: '52px', height: '52px' }}
+              />
+            </div>
             
             <div className="flex items-center gap-10">
               <div className="hidden md:flex items-center gap-8">
@@ -982,12 +984,12 @@ export default function Home() {
           <div className="grid md:grid-cols-5 gap-12 mb-16">
             <div className="md:col-span-2">
               <Image
-                src="/triage.png"
+                src="/logo.png"
                 alt="Triage"
-                width={100}
-                height={28}
-                className="h-7 w-auto mb-6"
-                style={{ height: '28px', width: 'auto' }}
+                width={40}
+                height={40}
+                className="w-10 h-10 logo-filter mb-6"
+                style={{ width: '40px', height: '40px' }}
               />
               <p className="text-pale-wood/60 mb-8 max-w-sm">
                 AI-powered security that embeds into your development workflow.
