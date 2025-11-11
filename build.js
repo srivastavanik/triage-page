@@ -1,27 +1,68 @@
 const fs = require('fs');
 const path = require('path');
 
-// Build script to inject environment variables
+// Build script for Vercel static output
 try {
-  // Read the HTML file
-  const htmlPath = path.join(__dirname, 'index.html');
-  let html = fs.readFileSync(htmlPath, 'utf8');
+  // Create Vercel output structure
+  const outputDir = path.join(__dirname, '.vercel/output');
+  const staticDir = path.join(outputDir, 'static');
   
-  // Replace environment variable placeholders with actual values
-  const supabaseUrl = process.env.SUPABASE_URL || 'VITE_SUPABASE_URL';
-  const supabaseAnonKey = process.env.SUPABASE_ANON_KEY || 'VITE_SUPABASE_ANON_KEY';
+  // Create directories
+  if (!fs.existsSync(outputDir)) {
+    fs.mkdirSync(outputDir, { recursive: true });
+  }
+  if (!fs.existsSync(staticDir)) {
+    fs.mkdirSync(staticDir, { recursive: true });
+  }
   
-  // Replace the placeholder values in the HTML
-  html = html.replace('VITE_SUPABASE_URL', supabaseUrl);
-  html = html.replace('VITE_SUPABASE_ANON_KEY', supabaseAnonKey);
+  // Create config.json
+  const config = {
+    version: 3
+  };
+  fs.writeFileSync(path.join(outputDir, 'config.json'), JSON.stringify(config, null, 2));
   
-  // Write the processed HTML back
-  fs.writeFileSync(htmlPath, html);
+  // Copy all files to static directory
+  const filesToCopy = [
+    'index.html',
+    'FullLogo_Transparent_NoBuffer (2).png',
+    'Black White Minimal Simple Modern Letter A Arts Gallery Logo (3).png',
+    'Nyu_short_black.svg (1).png'
+  ];
   
-  console.log('✅ Environment variables injected successfully');
-  console.log(`🔗 Supabase URL: ${supabaseUrl.substring(0, 30)}...`);
-  console.log(`🔑 Anon Key: ${supabaseAnonKey.substring(0, 20)}...`);
+  filesToCopy.forEach(file => {
+    const srcPath = path.join(__dirname, file);
+    if (fs.existsSync(srcPath)) {
+      fs.copyFileSync(srcPath, path.join(staticDir, file));
+    }
+  });
+  
+  // Copy public directory recursively
+  const copyRecursive = (src, dest) => {
+    if (!fs.existsSync(src)) return;
+    
+    if (!fs.existsSync(dest)) {
+      fs.mkdirSync(dest, { recursive: true });
+    }
+    
+    const entries = fs.readdirSync(src, { withFileTypes: true });
+    
+    for (const entry of entries) {
+      const srcPath = path.join(src, entry.name);
+      const destPath = path.join(dest, entry.name);
+      
+      if (entry.isDirectory()) {
+        copyRecursive(srcPath, destPath);
+      } else {
+        fs.copyFileSync(srcPath, destPath);
+      }
+    }
+  };
+  
+  copyRecursive(path.join(__dirname, 'public'), path.join(staticDir, 'public'));
+  
+  console.log('✅ Build completed successfully');
+  console.log(`📁 Output directory: ${outputDir}`);
 } catch (error) {
-  console.error('❌ Error processing HTML:', error);
+  console.error('❌ Error during build:', error);
   process.exit(1);
 }

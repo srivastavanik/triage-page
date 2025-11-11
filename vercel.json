@@ -1,8 +1,5 @@
 {
-  "framework": null,
-  "buildCommand": null,
-  "devCommand": null,
-  "installCommand": null,
+  "buildCommand": "npm run build",
   "headers": [
     {
       "source": "/(.*)",

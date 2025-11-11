@@ -2,7 +2,9 @@
   "name": "triage-front",
   "version": "1.0.0",
   "description": "Triage security testing platform",
-  "scripts": {},
+  "scripts": {
+    "build": "node build.js"
+  },
   "keywords": ["triage", "security", "testing"],
   "author": "Triage",
   "license": "MIT"
