@@ -1,0 +1,1481 @@
+[00:00:00.662] Server  LOG      ✓ Ready in 455ms
+[00:00:10.391] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:00:10.779] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:01:33.875] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[00:06:24.976] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:06:25.242] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:19:14.536] Server  LOG      ✓ Compiled in 197ms
+[00:19:14.639] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:19:43.817] Server  LOG      ✓ Compiled in 201ms
+[00:19:43.925] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:20:48.626] Server  LOG      ✓ Compiled in 153ms
+[00:20:48.731] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:21:55.452] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:14.148] Server  ERROR    ⨯ ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:25:14.269] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:14.651] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:14.651] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:14.958] Server  INFO    Time 3.046625
+[00:25:15.104] Browser ERROR   uncaughtError: Error: ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:25:15.267] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:15.267] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:16.062] Server  ERROR    ⨯ ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:25:16.076] Server  INFO    Time 1.28775
+[00:25:16.151] Browser ERROR   uncaughtError: Error: ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+
+
+[00:25:16.288] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:16.288] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:25:53.451] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:26:16.557] Browser ERROR   ./components/ComprehensiveDashboard.tsx:121:51
+Parsing ecmascript source code failed
+  119 |               <div className="code-line">// Trial chat endpoint (no auth required)</div>
+  120 |               <div className="code-line vuln-line">
+> 121 |                 router.post('/trial', (req, res) => chatController.trialChat(req, res));
+      |                                                   ^
+  122 |               </div>
+  123 |               <div className="code-line"></div>
+  124 |               <div className="code-line">// Protected routes</div>
+
+Unexpected token. Did you mean `{'>'}` or `&gt;`?
+
+Import traces:
+  Client Component Browser:
+    ./components/ComprehensiveDashboard.tsx [Client Component Browser]
+    ./app/page.tsx [Client Component Browser]
+    ./app/page.tsx [Server Component]
+
+  Client Component SSR:
+    ./components/ComprehensiveDashboard.tsx [Client Component SSR]
+    ./app/page.tsx [Client Component SSR]
+    ./app/page.tsx [Server Component]
+[00:26:26.963] Server  LOG      ✓ Compiled in 105ms
+[00:26:27.400] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:26:27.638] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:48:09.747] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:48:09.917] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:52:45.957] Server  LOG      ✓ Compiled in 147ms
+[00:53:16.526] Server  LOG      ✓ Compiled in 133ms
+[00:53:47.529] Server  LOG      ✓ Compiled in 109ms
+[00:54:17.872] Server  LOG      ✓ Compiled in 124ms
+[00:54:45.118] Server  LOG      ✓ Compiled in 117ms
+[00:55:13.758] Server  LOG      ✓ Compiled in 97ms
+[00:55:42.949] Server  LOG      ✓ Compiled in 85ms
+[00:57:30.824] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[00:57:31.031] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[00:57:57.067] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[01:01:45.605] Server  LOG      ✓ Compiled in 112ms
+[01:02:16.199] Server  LOG      ✓ Compiled in 84ms
+[01:02:43.139] Server  LOG      ✓ Compiled in 84ms
+[01:03:12.581] Server  LOG      ✓ Compiled in 104ms
+[01:03:45.525] Server  LOG      ✓ Compiled in 98ms
+[01:04:18.518] Server  LOG      ✓ Compiled in 156ms
+[01:05:23.840] Server  LOG      ✓ Compiled in 93ms
+[01:05:56.799] Server  LOG      ✓ Compiled in 95ms
+[01:06:30.350] Server  LOG      ✓ Compiled in 151ms
+[01:22:28.079] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:22:28.329] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:24:01.262] Server  LOG      ✓ Compiled in 228ms
+[01:33:35.403] Server  LOG      ✓ Compiled in 247ms
+[01:34:08.712] Server  LOG      ✓ Compiled in 134ms
+[01:34:41.942] Server  LOG      ✓ Compiled in 230ms
+[01:35:42.749] Server  LOG      ✓ Compiled in 199ms
+[01:36:15.055] Server  LOG      ✓ Compiled in 142ms
+[01:38:27.135] Server  LOG      ✓ Compiled in 201ms
+[01:39:00.801] Server  LOG      ✓ Compiled in 139ms
+[01:57:06.095] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[01:57:07.621] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[01:59:01.228] Server  LOG      ✓ Compiled in 384ms
+[02:07:12.920] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[02:07:13.156] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[02:18:11.820] Server  LOG      ✓ Compiled in 236ms
+[02:18:49.893] Server  LOG      ✓ Compiled in 157ms
+[03:06:30.891] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:06:31.136] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:07:22.605] Server  LOG      ✓ Compiled in 204ms
+[03:07:34.993] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:07:35.232] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:10:47.305] Server  LOG      ✓ Compiled in 162ms
+[03:10:52.512] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:10:52.741] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:10:55.921] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:10:56.154] Server  LOG      ✓ Compiled in 173ms
+[03:10:56.186] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:10:57.501] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:10:57.736] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:11:06.643] Server  LOG      ✓ Compiled in 132ms
+[03:11:08.747] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:11:08.952] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:11:28.404] Server  LOG      ✓ Compiled in 363ms
+[03:12:35.485] Server  LOG      ✓ Compiled in 167ms
+[03:13:15.962] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:13:16.205] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:13:49.829] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:13:50.040] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:13:51.766] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:13:52.013] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:13:52.480] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:13:52.686] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:13:58.033] Server  LOG      ✓ Compiled in 113ms
+[03:13:58.908] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:13:59.126] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:14:01.031] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:14:01.250] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:14:04.043] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:14:04.270] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:14:04.984] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:14:05.214] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:14:31.978] Server  LOG      ✓ Compiled in 106ms
+[03:14:34.667] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:14:34.954] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:14:36.499] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:14:36.703] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:14:50.720] Server  LOG      ✓ Compiled in 122ms
+[03:15:05.553] Server  LOG      ✓ Compiled in 226ms
+[03:15:09.017] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:15:09.227] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:15:22.555] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:15:22.774] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:15:26.429] Server  LOG      ✓ Compiled in 158ms
+[03:19:02.944] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:19:03.154] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:22:28.600] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:22:28.847] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:22:41.607] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:22:41.849] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:22:44.750] Server  LOG      ✓ Compiled in 209ms
+[03:23:02.256] Server  LOG      ✓ Compiled in 164ms
+[03:23:24.583] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:23:24.802] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:23:32.775] Server  LOG      ✓ Compiled in 316ms
+[03:23:35.573] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:23:35.817] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:23:47.471] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:23:47.684] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:23:53.427] Server  LOG      ✓ Compiled in 264ms
+[03:24:06.191] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:24:06.466] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:24:16.520] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:24:16.732] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:24:32.675] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:24:32.926] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:25:33.401] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:25:33.664] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:25:35.117] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:25:35.331] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:25:49.117] Server  LOG      ✓ Compiled in 181ms
+[03:26:04.042] Server  LOG      ✓ Compiled in 208ms
+[03:26:17.613] Server  LOG      ✓ Compiled in 249ms
+[03:26:34.622] Server  LOG      ✓ Compiled in 5ms
+[03:26:53.083] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:26:53.322] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:27:06.626] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:27:06.903] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:28:22.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:28:22.986] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:28:50.300] Server  LOG      ✓ Compiled in 171ms
+[03:29:04.587] Server  LOG      ✓ Compiled in 152ms
+[03:29:15.133] Server  LOG      ✓ Compiled in 204ms
+[03:29:26.378] Server  LOG      ✓ Compiled in 128ms
+[03:30:20.992] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:30:21.270] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:30:29.336] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:30:29.555] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:30:40.754] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:30:41.060] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:30:49.182] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:30:49.438] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:31:16.740] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:31:17.046] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:33:03.288] Server  LOG      ✓ Compiled in 308ms
+[03:33:04.986] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[03:33:18.010] Server  LOG      ✓ Compiled in 84ms
+[03:33:45.457] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:33:45.655] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:33:52.757] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:33:52.980] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:34:09.416] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:34:09.642] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:35:01.660] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:35:01.939] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:35:23.240] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:35:23.493] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:35:30.557] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:35:30.858] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:35:45.505] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:35:45.745] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:35:57.473] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:35:57.713] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:37:18.724] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:37:18.953] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:37:22.414] Server  LOG      ✓ Compiled in 151ms
+[03:37:39.100] Server  LOG      ✓ Compiled in 647ms
+[03:37:52.969] Server  LOG      ✓ Compiled in 160ms
+[03:38:23.903] Server  LOG      ✓ Compiled in 221ms
+[03:38:50.802] Server  LOG      ✓ Compiled in 10ms
+[03:40:26.462] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:40:26.766] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:40:38.726] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:40:38.963] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:40:55.839] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:40:55.839] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:41:59.160] Server  LOG      ✓ Compiled in 280ms
+[03:42:13.124] Server  LOG      ✓ Compiled in 163ms
+[03:43:01.898] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:43:02.151] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:43:39.731] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:43:39.963] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:03.584] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:44:03.895] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:18.314] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:44:18.557] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:21.976] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:44:22.213] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:26.911] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:44:27.179] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:44:43.841] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:44:44.182] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:45:09.218] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:45:09.508] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:46:00.617] Server  LOG      ✓ Compiled in 165ms
+[03:46:14.420] Server  LOG      ✓ Compiled in 279ms
+[03:47:04.797] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:47:05.136] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:47:55.946] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:47:56.198] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:48:09.584] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:48:09.861] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:48:20.107] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:48:20.390] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:48:43.462] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:48:43.741] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:48:58.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:48:58.393] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:49:11.049] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:49:11.277] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:49:25.228] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:49:25.493] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:49:45.560] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:49:45.962] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:51:22.297] Server  LOG      ✓ Compiled in 141ms
+[03:51:32.638] Server  LOG      ✓ Compiled in 207ms
+[03:51:56.880] Server  LOG      ✓ Compiled in 174ms
+[03:52:20.820] Server  LOG      ✓ Compiled in 272ms
+[03:52:34.606] Server  LOG      ✓ Compiled in 147ms
+[03:52:58.112] Server  LOG      ✓ Compiled in 168ms
+[03:59:34.122] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:34.398] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:59:48.449] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:48.686] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[03:59:54.181] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[03:59:54.383] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:00:11.805] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:00:12.066] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:00:39.300] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:00:39.548] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:01:23.693] Server  LOG      ✓ Compiled in 191ms
+[04:01:36.795] Server  LOG      ✓ Compiled in 172ms
+[04:01:46.785] Server  LOG      ✓ Compiled in 164ms
+[04:02:12.083] Server  LOG      ✓ Compiled in 162ms
+[04:02:28.343] Server  LOG      ✓ Compiled in 156ms
+[04:02:41.209] Server  LOG      ✓ Compiled in 128ms
+[04:02:58.372] Server  LOG      ✓ Compiled in 184ms
+[04:03:18.662] Server  LOG      ✓ Compiled in 142ms
+[04:04:03.220] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:04:03.496] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:26.640] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:04:26.881] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:33.148] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:04:33.398] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:04:48.234] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:04:48.505] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:05:02.065] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:05:02.294] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:05:17.431] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:05:17.716] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:13:41.205] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[04:13:58.281] Server  LOG      ✓ Compiled in 319ms
+[04:14:13.192] Server  LOG      ✓ Compiled in 5ms
+[04:14:15.169] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:14:15.375] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:14:16.653] Server  LOG      ✓ Compiled in 190ms
+[04:14:24.652] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:14:24.893] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:14:49.586] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:14:49.832] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:15:43.862] Server  LOG      ✓ Compiled in 184ms
+[04:15:54.182] Server  LOG      ✓ Compiled in 338ms
+[04:16:09.593] Server  LOG      ✓ Compiled in 207ms
+[04:16:24.990] Server  LOG      ✓ Compiled in 247ms
+[04:16:46.391] Server  LOG      ✓ Compiled in 164ms
+[04:17:39.316] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:17:39.562] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:18:23.620] Server  LOG      ✓ Compiled in 176ms
+[04:18:45.078] Server  LOG      ✓ Compiled in 167ms
+[04:19:06.514] Server  LOG      ✓ Compiled in 7ms
+[04:20:03.610] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:20:03.891] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:20:21.481] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:20:21.744] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:20:31.206] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:20:31.460] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:21:54.337] Server  LOG      ✓ Compiled in 220ms
+[04:22:11.672] Server  LOG      ✓ Compiled in 183ms
+[04:22:31.983] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:22:32.300] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:22:32.460] Server  LOG      ✓ Compiled in 393ms
+[04:22:57.777] Server  LOG      ✓ Compiled in 205ms
+[04:23:10.630] Server  LOG      ✓ Compiled in 162ms
+[04:23:24.894] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:23:25.191] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:23:30.444] Server  LOG      ✓ Compiled in 239ms
+[04:23:54.962] Server  LOG      ✓ Compiled in 14ms
+[04:24:49.391] Server  LOG      ✓ Compiled in 169ms
+[04:25:15.553] Server  LOG      ✓ Compiled in 173ms
+[04:25:33.359] Server  LOG      ✓ Compiled in 157ms
+[04:25:48.176] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:25:48.557] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:26:30.944] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:26:31.201] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:28:51.237] Server  LOG      ✓ Compiled in 212ms
+[04:29:15.720] Server  LOG      ✓ Compiled in 170ms
+[04:29:35.119] Server  LOG      ✓ Compiled in 172ms
+[04:30:09.762] Server  LOG      ✓ Compiled in 167ms
+[04:30:19.686] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:30:20.011] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:30:38.630] Server  LOG      ✓ Compiled in 252ms
+[04:30:40.471] Server  LOG      ✓ Compiled in 6ms
+[04:30:40.783] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:30:41.048] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                <Home params={Promise} searchParams={Promise}>
+                  <main className="relative">
+                    <motion.div>
+                    <nav>
+                    <section className="min-h-scre...">
+                      <div>
+                      <div className="absolute l...">
+                        <div className="flex flex-...">
+                          <motion.div className="text-white" style={{...}} animate={{opacity:[...]}} transition={{...}}>
+                            <div
+                              className="text-white"
+                              style={{textShadow:"0 0 8px rg..."}}
+                              ref={function useMotionRef.useCallback}
+                            >
++                             1
+-                             0
+                          ...
+                      ...
+                    ...
+            ...
+          ...
+
+[04:30:41.048] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:31:03.216] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:31:03.518] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                <Home params={Promise} searchParams={Promise}>
+                  <main className="relative">
+                    <motion.div>
+                    <nav>
+                    <section className="min-h-scre...">
+                      <div>
+                      <div className="absolute l...">
+                        <div className="flex flex-...">
+                          <motion.div>
+                          <motion.div className="text-white" style={{...}} animate={{opacity:[...]}} transition={{...}}>
+                            <div
+                              className="text-white"
+                              style={{textShadow:"0 0 8px rg..."}}
+                              ref={function useMotionRef.useCallback}
+                            >
++                             1
+-                             0
+                          ...
+                      ...
+                    ...
+            ...
+          ...
+
+[04:31:03.518] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:31:12.988] Server  LOG      ✓ Compiled in 410ms
+[04:31:18.537] Server  LOG      ✓ Compiled in 5ms
+[04:31:19.092] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:31:19.447] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                <Home params={Promise} searchParams={Promise}>
+                  <main className="relative">
+                    <motion.div>
+                    <nav>
+                    <section className="min-h-scre...">
+                      <div>
+                      <div className="absolute l...">
+                        <div className="flex flex-...">
+                          <motion.div className="text-white" style={{...}} animate={{opacity:[...]}} transition={{...}}>
+                            <div
+                              className="text-white"
+                              style={{textShadow:"0 0 8px rg...",fontWeight:"500"}}
+                              ref={function useMotionRef.useCallback}
+                            >
++                             1
+-                             0
+                          ...
+                        ...
+                      ...
+                    ...
+            ...
+          ...
+
+[04:31:19.447] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:31:52.494] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:31:52.863] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                <Home params={Promise} searchParams={Promise}>
+                  <main className="relative">
+                    <motion.div>
+                    <nav>
+                    <section className="min-h-scre...">
+                      <div>
+                      <div className="absolute l...">
+                        <div className="flex flex-...">
+                          <motion.div className="text-white" style={{...}} animate={{opacity:[...]}} transition={{...}}>
+                            <div
+                              className="text-white"
+                              style={{textShadow:"0 0 8px rg...",fontWeight:"500"}}
+                              ref={function useMotionRef.useCallback}
+                            >
++                             0
+-                             1
+                          ...
+                        ...
+                      ...
+                    ...
+            ...
+          ...
+
+[04:31:52.959] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:31:59.789] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:32:00.146] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                <Home params={Promise} searchParams={Promise}>
+                  <main className="relative">
+                    <motion.div>
+                    <nav>
+                    <section className="min-h-scre...">
+                      <div>
+                      <div className="absolute l...">
+                        <div className="flex flex-...">
+                          <motion.div className="text-white" style={{...}} animate={{opacity:[...]}} transition={{...}}>
+                            <div
+                              className="text-white"
+                              style={{textShadow:"0 0 8px rg...",fontWeight:"500"}}
+                              ref={function useMotionRef.useCallback}
+                            >
++                             1
+-                             0
+                          ...
+                        ...
+                      ...
+                    ...
+            ...
+          ...
+
+[04:32:00.146] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:32:21.983] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:32:22.315] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                <Home params={Promise} searchParams={Promise}>
+                  <main className="relative">
+                    <motion.div>
+                    <nav>
+                    <section className="min-h-scre...">
+                      <div>
+                      <div className="absolute l...">
+                        <div className="flex flex-...">
+                          <motion.div className="text-white" style={{...}} animate={{opacity:[...]}} transition={{...}}>
+                            <div
+                              className="text-white"
+                              style={{textShadow:"0 0 8px rg...",fontWeight:"500"}}
+                              ref={function useMotionRef.useCallback}
+                            >
++                             1
+-                             0
+                          ...
+                        ...
+                      ...
+                    ...
+            ...
+          ...
+
+[04:32:22.315] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:32:35.546] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:32:35.879] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[04:32:35.879] Browser ERROR   uncaughtError: Error: Hydration failed because the server rendered text didn't match the client. As a result this tree will be regenerated on the client. This can happen if a SSR-ed Client Component used:
+
+- A server/client branch `if (typeof window !== 'undefined')`.
+- Variable input such as `Date.now()` or `Math.random()` which changes each time it's called.
+- Date formatting in a user's locale which doesn't match the server.
+- External changing data without sending a snapshot of it along with the HTML.
+- Invalid HTML tag nesting.
+
+It can also happen if the client has a browser extension installed which messes with the HTML before React loaded.
+
+https://react.dev/link/hydration-mismatch
+
+  ...
+    <HTTPAccessFallbackErrorBoundary pathname="/" notFound={<SegmentViewNode>} forbidden={undefined} ...>
+      <RedirectBoundary>
+        <RedirectErrorBoundary router={{...}}>
+          <InnerLayoutRouter url="/" tree={[...]} params={{}} cacheNode={{lazyData:null, ...}} segmentPath={[...]} ...>
+            <SegmentViewNode type="page" pagePath="page.tsx">
+              <SegmentTrieNode>
+              <ClientPageRoot Component={function Home} serverProvidedParams={{...}}>
+                <Home params={Promise} searchParams={Promise}>
+                  <main className="relative">
+                    <motion.div>
+                    <nav>
+                    <section className="min-h-scre...">
+                      <div>
+                      <div className="absolute l...">
+                        <div className="flex flex-...">
+                          <motion.div>
+                          <motion.div className="text-white" style={{...}} animate={{opacity:[...]}} transition={{...}}>
+                            <div
+                              className="text-white"
+                              style={{textShadow:"0 0 8px rg...",fontWeight:"500"}}
+                              ref={function useMotionRef.useCallback}
+                            >
++                             1
+-                             0
+                          ...
+                        ...
+                      ...
+                    ...
+            ...
+          ...
+
+[04:32:35.879] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:33:43.598] Server  LOG      ✓ Compiled in 310ms
+[04:33:58.961] Server  LOG      ✓ Compiled in 207ms
+[04:34:24.386] Server  LOG      ✓ Compiled in 540ms
+[04:34:38.303] Server  LOG      ✓ Compiled in 134ms
+[04:34:59.514] Server  LOG      ✓ Compiled in 142ms
+[04:35:13.447] Server  LOG      ✓ Compiled in 165ms
+[04:35:24.961] Server  LOG      ✓ Compiled in 280ms
+[04:39:29.850] Server  LOG      ✓ Compiled in 197ms
+[04:46:43.567] Server  LOG      ✓ Compiled in 126ms
+[04:46:59.047] Server  LOG      ✓ Compiled in 100ms
+[04:47:11.865] Server  LOG      ✓ Compiled in 91ms
+[04:47:27.002] Server  LOG      ✓ Compiled in 93ms
+[04:47:37.937] Server  LOG      ✓ Compiled in 109ms
+[04:47:51.136] Server  LOG      ✓ Compiled in 113ms
+[04:50:23.787] Server  LOG      ✓ Compiled in 128ms
+[04:50:39.830] Server  LOG      ✓ Compiled in 247ms
+[04:50:54.715] Server  LOG      ✓ Compiled in 91ms
+[04:51:46.136] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:51:46.335] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:52:46.818] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[04:56:24.333] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:56:24.548] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:56:40.846] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[04:56:41.097] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[04:57:49.771] Server  LOG      ✓ Compiled in 143ms
+[04:58:34.182] Server  LOG      ✓ Compiled in 164ms
+[04:59:06.411] Server  LOG      ✓ Compiled in 144ms
+[04:59:55.762] Server  LOG      ✓ Compiled in 233ms
+[05:00:16.987] Server  LOG      ✓ Compiled in 179ms
+[05:00:30.124] Server  LOG      ✓ Compiled in 97ms
+[05:00:51.590] Server  LOG      ✓ Compiled in 145ms
+[05:01:33.281] Server  LOG      ✓ Compiled in 96ms
+[05:02:39.847] Server  LOG      ✓ Compiled in 153ms
+[05:03:13.557] Server  LOG      ✓ Compiled in 121ms
+[05:03:23.987] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:03:24.355] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:05:52.156] Server  LOG      ✓ Compiled in 185ms
+[05:06:05.963] Server  LOG      ✓ Compiled in 175ms
+[05:06:18.723] Server  LOG      ✓ Compiled in 164ms
+[05:06:30.502] Server  LOG      ✓ Compiled in 258ms
+[05:06:45.133] Server  LOG      ✓ Compiled in 265ms
+[05:07:04.283] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:07:06.749] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:07:11.087] Server  LOG      ✓ Compiled in 308ms
+[05:07:11.355] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:07:11.419] Server  LOG      ✓ Compiled in 15ms
+[05:07:12.950] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:07:20.133] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:07:25.671] Server  LOG      ✓ Compiled in 254ms
+[05:08:12.336] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:09:36.822] Server  LOG      ✓ Compiled in 547ms
+[05:10:09.432] Server  LOG      ✓ Compiled in 196ms
+[05:10:29.161] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:10:29.445] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:10:29.445] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:10:29.445] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:02.130] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:11:02.371] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:11:02.371] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:02.371] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:02.876] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:11:03.162] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:11:03.162] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:03.162] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:32.361] Server  LOG      ✓ Compiled in 109ms
+[05:11:33.052] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:33.056] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:33.057] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:33.057] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:43.951] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:11:44.177] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:11:44.177] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:44.177] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:45.199] Server  LOG      ✓ Compiled in 122ms
+[05:11:52.393] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:11:52.698] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:11:52.698] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:52.698] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:58.479] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:11:58.766] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:11:58.766] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:11:58.766] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:00.204] Server  LOG      ✓ Compiled in 252ms
+[05:12:08.551] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:12:08.790] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:12:08.790] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:08.790] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:13.579] Server  LOG      ✓ Compiled in 137ms
+[05:12:14.496] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:12:14.780] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:12:14.780] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:14.780] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:18.927] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:12:19.221] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:19.221] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:19.980] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:12:20.201] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:12:20.201] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:20.201] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:20.545] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:12:20.827] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:20.827] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:12:43.391] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:13:05.825] Server  LOG      ✓ Compiled in 253ms
+[05:13:17.509] Server  LOG      ✓ Compiled in 92ms
+[05:13:29.780] Server  LOG      ✓ Compiled in 75ms
+[05:13:43.501] Server  LOG      ✓ Compiled in 148ms
+[05:18:47.433] Server  LOG      ✓ Compiled in 483ms
+[05:19:02.273] Server  LOG      ✓ Compiled in 294ms
+[05:19:15.905] Server  LOG      ✓ Compiled in 232ms
+[05:19:29.984] Server  LOG      ✓ Compiled in 313ms
+[05:19:42.601] Server  LOG      ✓ Compiled in 178ms
+[05:20:24.185] Server  LOG      ✓ Compiled in 256ms
+[05:20:54.943] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:20:55.241] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:20:55.241] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:22:12.890] Server  LOG      ✓ Compiled in 256ms
+[05:22:27.170] Server  LOG      ✓ Compiled in 342ms
+[05:23:01.750] Server  LOG      ✓ Compiled in 13ms
+[05:25:58.597] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:25:59.018] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:25:59.019] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:27:10.781] Server  LOG      ✓ Compiled in 172ms
+[05:27:22.703] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:27:22.918] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:27:22.918] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:27:25.238] Server  LOG      ✓ Compiled in 227ms
+[05:27:38.193] Server  LOG      ✓ Compiled in 282ms
+[05:27:39.857] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:27:40.094] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:27:40.094] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:27:43.469] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:27:43.696] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:27:43.696] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:27:51.037] Server  LOG      ✓ Compiled in 167ms
+[05:27:51.796] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:27:52.020] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:27:52.020] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:28:35.169] Server  LOG      ✓ Compiled in 254ms
+[05:28:48.701] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:30:19.416] Server  LOG      ✓ Compiled in 161ms
+[05:30:56.021] Server  LOG      ✓ Compiled in 143ms
+[05:34:51.634] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:34:51.900] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:34:51.900] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:34:51.900] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:36:14.690] Server  LOG      ✓ Compiled in 220ms
+[05:36:30.119] Server  LOG      ✓ Compiled in 237ms
+[05:38:11.465] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:38:11.698] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:38:11.698] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:39:14.576] Server  LOG      ✓ Compiled in 219ms
+[05:39:27.910] Server  LOG      ✓ Compiled in 138ms
+[05:39:42.512] Server  LOG      ✓ Compiled in 203ms
+[05:39:56.721] Server  LOG      ✓ Compiled in 162ms
+[05:40:16.734] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:40:17.978] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:41:02.175] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:41:02.371] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:41:02.371] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:41:58.639] Server  LOG      ✓ Compiled in 163ms
+[05:42:14.113] Server  LOG      ✓ Compiled in 160ms
+[05:42:28.355] Server  LOG      ✓ Compiled in 159ms
+[05:42:42.364] Server  LOG      ✓ Compiled in 117ms
+[05:43:01.797] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:43:02.008] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:43:02.008] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:44:37.442] Server  LOG      ✓ Compiled in 253ms
+[05:45:07.991] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:45:08.233] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:45:08.233] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:45:22.838] Server  LOG      ✓ Compiled in 204ms
+[05:48:23.524] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:48:23.740] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:48:23.740] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:48:29.910] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:49:12.437] Browser WARN    Detected `scroll-behavior: smooth` on the `<html>` element. To disable smooth scrolling during route transitions, add `data-scroll-behavior="smooth"` to your <html> element. Learn more: https://nextjs.org/docs/messages/missing-data-scroll-behavior
+[05:51:20.612] Server  LOG      ✓ Compiled in 203ms
+[05:51:34.375] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:51:34.661] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:51:34.661] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:51:34.661] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:52:29.739] Server  LOG      ✓ Compiled in 146ms
+[05:52:45.723] Server  LOG      ✓ Compiled in 190ms
+[05:53:01.931] Server  LOG      ✓ Compiled in 150ms
+[05:53:20.908] Server  LOG      ✓ Compiled in 255ms
+[05:53:40.485] Server  LOG      ✓ Compiled in 265ms
+[05:54:10.331] Server  LOG      ✓ Compiled in 230ms
+[05:57:31.672] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:31.918] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:31.918] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:31.918] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:34.617] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:34.883] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:34.883] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:34.883] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:36.417] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:36.677] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:36.677] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:36.677] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:39.611] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:39.859] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:39.859] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:40.738] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:40.985] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:40.985] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:40.985] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:41.679] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:41.928] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:41.928] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:41.928] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:42.499] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:42.745] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:42.745] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:42.745] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:43.432] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:43.663] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:43.663] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:43.663] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:47.334] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:47.627] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:47.627] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:47.627] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:48.995] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:49.259] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:49.259] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:49.259] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:49.977] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:50.282] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:50.282] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:50.282] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:50.914] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:51.111] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:51.111] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:51.111] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:51.690] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:51.939] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:51.939] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:51.939] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:52.557] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:52.808] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:52.808] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:52.808] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:53.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:53.607] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:53.607] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:53.607] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:54.282] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:54.539] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:54.539] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:54.539] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:55.067] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:55.330] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:55.330] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:55.330] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:55.865] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:56.113] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:56.113] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:56.113] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:56.523] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:56.772] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:56.772] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:56.772] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:57.162] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:57.413] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:57.413] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:57.413] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:57.833] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:58.090] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:58.090] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:58.090] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:58.532] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:58.725] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:58.725] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:58.725] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:59.204] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:57:59.457] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:57:59.457] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:57:59.457] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:00.307] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:00.575] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:00.575] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:00.575] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:01.167] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:01.461] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:01.461] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:01.461] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:01.747] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:02.007] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:02.007] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:02.007] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:02.409] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:02.611] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:02.611] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:02.611] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:02.948] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:03.214] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:03.214] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:03.214] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:03.462] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:03.715] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:03.715] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:03.715] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:03.898] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:04.158] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:04.159] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:04.159] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:04.356] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:04.599] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:04.599] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:04.599] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:04.888] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:05.176] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:05.176] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:05.176] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:06.135] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:06.433] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:06.433] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:06.433] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:06.725] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:07.002] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:07.002] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:07.002] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:12.408] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:12.691] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[05:58:12.691] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:12.691] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:18.232] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[05:58:18.500] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[05:58:18.500] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:00:11.631] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:00:11.885] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:00:11.885] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:00:25.288] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:00:25.555] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[06:00:25.555] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:00:25.555] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:01:17.363] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:01:17.907] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[06:01:17.907] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:01:17.907] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:01:44.798] Server  LOG      ✓ Compiled in 360ms
+[06:01:47.623] Server  LOG      ✓ Compiled in 14ms
+[06:01:48.058] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:01:48.325] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[06:01:48.325] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:01:48.325] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:03:15.861] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:03:16.172] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[06:03:16.172] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:03:16.172] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:04:01.045] Server  LOG      ✓ Compiled in 200ms
+[06:04:22.046] Server  LOG      ✓ Compiled in 193ms
+[06:04:40.793] Server  LOG      ✓ Compiled in 116ms
+[06:04:55.676] Server  LOG      ✓ Compiled in 246ms
+[06:05:11.492] Server  LOG      ✓ Compiled in 206ms
+[06:05:24.981] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:05:25.266] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:05:25.266] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:06:42.150] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:06:42.484] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:06:42.484] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:07:41.770] Server  LOG      ✓ Compiled in 391ms
+[06:08:02.769] Server  LOG      ✓ Compiled in 276ms
+[06:08:06.389] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:08:06.650] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[06:08:06.650] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:08:06.650] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:08:45.041] Server  LOG      ✓ Compiled in 216ms
+[06:08:59.608] Server  LOG      ✓ Compiled in 221ms
+[06:09:17.823] Server  LOG      ✓ Compiled in 245ms
+[06:09:40.311] Server  LOG      ✓ Compiled in 8ms
+[06:10:58.865] Server  LOG      ✓ Compiled in 522ms
+[06:11:04.929] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:11:05.242] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:11:05.242] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:12:12.602] Server  LOG      ✓ Compiled in 227ms
+[06:12:28.424] Server  LOG      ✓ Compiled in 167ms
+[06:13:37.371] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[06:13:37.658] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[06:13:37.658] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:13:37.658] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[06:46:01.089] Server  LOG      ✓ Compiled in 2.2s
+[06:46:01.302] Server  LOG      ✓ Compiled in 0ms
+[06:46:09.086] Server  LOG      ✓ Compiled in 758ms
+[06:46:09.506] Server  LOG      ✓ Compiled in 2.2s
+[06:46:11.257] Server  LOG      ✓ Compiled in 340ms
+[06:46:16.694] Server  LOG      ✓ Compiled in 215ms
+[06:46:21.238] Server  LOG      ✓ Compiled in 219ms
+[06:46:25.658] Server  LOG      ✓ Compiled in 288ms
+[06:46:31.470] Server  LOG      ✓ Compiled in 144ms
+[06:46:38.123] Server  LOG      ✓ Compiled in 111ms
+[06:47:23.890] Server  LOG      ✓ Compiled in 399ms
+[06:47:28.856] Server  LOG      ✓ Compiled in 308ms
+[07:05:22.449] Server  LOG      ✓ Compiled in 1891ms
+[07:05:28.556] Server  LOG      ✓ Compiled in 260ms
+[07:05:46.334] Server  LOG      ✓ Compiled in 5ms
+[07:29:58.341] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:29:59.211] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[07:29:59.211] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:29:59.211] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:30:57.128] Server  LOG      ✓ Compiled in 813ms
+[07:31:03.760] Server  LOG      ✓ Compiled in 317ms
+[07:31:09.040] Server  LOG      ✓ Compiled in 233ms
+[07:31:13.865] Server  LOG      ✓ Compiled in 893ms
+[07:32:00.906] Browser INFO    %cDownload the React DevTools for a better development experience: https://react.dev/link/react-devtools font-weight:bold
+[07:32:01.184] Browser WARN    Image with src "/logo.png" was detected as the Largest Contentful Paint (LCP). Please add the `loading="eager"` property if this image is above the fold.
+Read more: https://nextjs.org/docs/app/api-reference/components/image#loading
+[07:32:01.184] Browser WARN    Image with src "/logo.png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
+[07:32:01.184] Browser WARN    Image with src "/user_logos/ee1a22e0-bf8f-4c49-8728-4fc9ef1a7fbe (1).png" has either width or height modified, but not the other. If you use CSS to change the size of your image, also include the styles 'width: "auto"' or 'height: "auto"' to maintain the aspect ratio.
