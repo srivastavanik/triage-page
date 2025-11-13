@@ -551,6 +551,7 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
+                <Link href="/careers" className="nav-link">Careers</Link>
                 <Link href="/team" className="nav-link">Team</Link>
               </div>
               <a 
@@ -588,6 +589,7 @@ export default function Home() {
                 transition={{ duration: 0.3 }}
               >
                 <div className="container-max py-6 space-y-4">
+                  <Link href="/careers" className="block text-pale-wood hover:text-cyan transition-colors py-2">Careers</Link>
                   <Link href="/team" className="block text-pale-wood hover:text-cyan transition-colors py-2">Team</Link>
                   <a 
                     href="mailto:srivastavan@berkeley.edu"
@@ -1454,6 +1456,13 @@ export default function Home() {
               >
                 Contact Us →
               </a>
+              <Link 
+                href="/careers"
+                className="btn btn-large hover:scale-105 transition-all"
+                style={{ background: '#0e3638', borderWidth: '2px', borderStyle: 'solid', borderColor: '#f6f4f1', color: '#f6f4f1', padding: '18px 40px', fontSize: '18px', fontWeight: '500' }}
+              >
+                View Open Positions
+              </Link>
             </div>
             <p className="text-[14px] text-midnight-green/50">
               srivastavan@berkeley.edu
@@ -1487,7 +1496,7 @@ export default function Home() {
             
             {[
               { title: 'PRODUCT', links: [{ label: 'Features', href: '/#features' }, { label: 'Platform', href: '/' }] },
-              { title: 'COMPANY', links: [{ label: 'Team', href: '/team' }, { label: 'Contact', href: 'mailto:srivastavan@berkeley.edu' }] },
+              { title: 'COMPANY', links: [{ label: 'Careers', href: '/careers' }, { label: 'Team', href: '/team' }, { label: 'Contact', href: 'mailto:srivastavan@berkeley.edu' }] },
               { title: 'RESOURCES', links: [{ label: 'Documentation', href: '#' }, { label: 'Security', href: '#' }] }
             ].map((section, i) => (
               <div key={i}>

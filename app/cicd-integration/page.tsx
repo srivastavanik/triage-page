@@ -23,6 +23,7 @@ export default function CICDIntegration() {
             </Link>
             <div className="flex items-center gap-8 text-[15px]">
               <Link href="/" className="hover:text-cyan transition-colors">Product</Link>
+              <Link href="/careers" className="hover:text-cyan transition-colors">Careers</Link>
               <Link href="/team" className="hover:text-cyan transition-colors">Team</Link>
             </div>
           </div>

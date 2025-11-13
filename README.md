@@ -83,6 +83,7 @@ Open [http://localhost:3000](http://localhost:3000) in your browser.
 │   ├── page.tsx            # Main page with all sections
 │   ├── globals.css         # Global styles with grain texture
 │   ├── auto-patch/         # Auto-patch feature page
+│   ├── careers/            # Careers page
 │   ├── cicd-integration/   # CI/CD integration page
 │   ├── rlhf-learning/      # RLHF learning page
 │   ├── security-scanner/   # Security scanner page

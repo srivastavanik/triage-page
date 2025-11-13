@@ -1717,7 +1717,7 @@ export default function Home() {
             {[
               { title: 'PRODUCT', links: ['Features', 'Pricing', 'Enterprise', 'Changelog'] },
               { title: 'RESOURCES', links: ['Documentation', 'API Reference', 'Blog', 'Community'] },
-              { title: 'COMPANY', links: ['About', 'Security', 'Privacy'] }
+              { title: 'COMPANY', links: ['About', 'Careers', 'Security', 'Privacy'] }
             ].map((section, i) => (
               <div key={i}>
                 <h5 className="text-pale-wood mb-6 text-[14px] font-mono">{section.title}</h5>

@@ -31,6 +31,7 @@ export default function Team() {
             </Link>
             <div className="flex items-center gap-8 text-[15px] text-midnight-green/70">
               <Link href="/" className="hover:text-midnight-green transition-colors">Product</Link>
+              <Link href="/careers" className="hover:text-midnight-green transition-colors">Careers</Link>
               <Link href="/team" className="text-midnight-green">Team</Link>
             </div>
           </div>
@@ -124,6 +125,15 @@ export default function Team() {
           >
             <h3 className="text-[36px] font-light mb-12">Rest of Team: Coming Soon</h3>
             
+            <div>
+              <p className="text-[18px] mb-6 font-light">Want to Join Us?</p>
+              <Link 
+                href="/careers"
+                className="team-careers-btn"
+              >
+                View Open Positions →
+              </Link>
+            </div>
           </motion.div>
         </div>
       </div>
@@ -168,6 +178,23 @@ export default function Team() {
           color: #0e3638;
           transform: translateY(-2px);
           box-shadow: 0 6px 16px rgba(14, 54, 56, 0.15);
+        }
+
+        .team-careers-btn {
+          display: inline-flex;
+          align-items: center;
+          gap: 10px;
+          padding: 18px 40px;
+          background: #0e3638;
+          color: #f6f4f1;
+          font-size: 18px;
+          font-weight: 500;
+          transition: all 0.3s ease;
+        }
+
+        .team-careers-btn:hover {
+          background: #038c8c;
+          transform: translateX(4px);
         }
       `}</style>
     </main>
